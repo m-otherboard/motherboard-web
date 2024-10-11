@@ -11,7 +11,9 @@ title = "(m)otherboard"
   to collective good.
 </p>
 
-<form class="send_message_form message form" name="contact-form" method="post" action="/contact-thanks" data-modal-id="modal-notify" data-netlify="true" netlify-honeypot="bot-field">
+<a id="interested-link" class="button" onclick="showForm();">Interested?</a>
+
+<form id="contact-form" class="send_message_form message form hidden" name="contact-form" method="post" action="/contact-thanks" data-modal-id="modal-notify" data-netlify="true" netlify-honeypot="bot-field">
   <div class="form-group">
     <label class="hidden">
       <input name="bot-field">
@@ -31,7 +33,7 @@ title = "(m)otherboard"
     </label>
   </div>
   <fieldset>
-    <button type="submit" class="button">I'm Interested</button>
+    <button type="submit" class="button">I'm interested.</button>
   </fieldset>
 </form>
 
@@ -63,4 +65,8 @@ title = "(m)otherboard"
     document.getElementById("confirmation-message").style.display = "block";
   }
 
+  function showForm() {
+    document.getElementById('contact-form').classList.remove("hidden");
+    document.getElementById('interested-link').classList.add("hidden");
+  }
 </script>
