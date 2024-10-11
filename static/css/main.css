@@ -40,7 +40,7 @@ header,
 section {
   box-sizing: border-box;
   margin: 0 auto;
-  max-width: 24rem;
+  max-width: 75%;
   padding: 1.5rem;
   text-align: center;
 }
@@ -129,7 +129,7 @@ h4 {
 
 p {
   margin: 1.5rem .5rem;
-  width: 24rem;
+  width: 75%;
   text-align: left;
 }
 
@@ -463,7 +463,7 @@ textarea {
 
   .logo {
     height: auto;
-    width: 24rem;
+    width: 75%;
   }
 }
 
