@@ -7,10 +7,8 @@
 
 /* Variables */
 :root {
-  --color-primary: #1e1a33;
+  --color-primary: #fff;
   --color-primary-lighter: #999999;
-  /* --color-primary: hsl(198, 90%, 27%);
-  --color-primary-lighter: hsl(198, 90%, 50%); */
   --color-primary-lightest: hsl(198, 90%, 70%);
   --color-green: hsl(153, 90%, 30%);
   --color-orange: hsl(18, 100%, 50%);
@@ -29,12 +27,8 @@ html {
 
 body {
   color: var(--color-black);
-  font: 300 1.25rem/1.875rem "Metropolis", sans-serif;
+  font: 300 1.25rem/1.875rem "Monograf", monospace;
   font-synthesis: none;
-  -moz-hanging-punctuation: first last allow-end;
-  -ms-hanging-punctuation: first last allow-end;
-  -webkit-hanging-punctuation: first last allow-end;
-  hanging-punctuation: first last allow-end;
   min-height: 100%;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -46,8 +40,9 @@ header,
 section {
   box-sizing: border-box;
   margin: 0 auto;
-  max-width: 47rem;
+  max-width: 24rem;
   padding: 1.5rem;
+  text-align: center;
 }
 
 ul,
@@ -133,11 +128,9 @@ h4 {
 }
 
 p {
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  -webkit-hyphens: auto;
-  hyphens: auto;
-  margin: 1.5rem 0;
+  margin: 1.5rem .5rem;
+  width: 24rem;
+  text-align: left;
 }
 
 /* Inline Elements */
@@ -293,7 +286,7 @@ header {
 
 header figure {
   line-height: 3rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0rem;
 }
 
 header figcaption {
@@ -469,8 +462,8 @@ textarea {
   }
 
   .logo {
-    height: 10rem;
-    width: 10rem;
+    height: auto;
+    width: 24rem;
   }
 }
 
