@@ -41,7 +41,7 @@ section {
   box-sizing: border-box;
   margin: 0 auto;
   max-width: 75%;
-  padding: 1.5rem;
+  padding: .75rem 1.5rem;
   text-align: center;
 }
 
@@ -285,7 +285,6 @@ header {
 }
 
 header figure {
-  line-height: 3rem;
   margin-bottom: 0rem;
 }
 
