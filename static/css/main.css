@@ -138,6 +138,7 @@ p {
 /* Inline Elements */
 a {
   color: var(--color-black);
+  background-color: var(--color-yellow);
   font-weight: 500;
   text-decoration: underline;
   transition: color 125ms, background-color 125ms;
