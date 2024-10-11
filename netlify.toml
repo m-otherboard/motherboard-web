@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://otherboard.org/*"
+  to = "https://m.otherboard.org/:splat"
+  status = 301
+  force = true
