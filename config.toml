@@ -1,4 +1,4 @@
-baseURL = "https://motherboard.org"
+baseURL = "https://m.otherboard.org"
 
 # canonifyURLs = true
 languageCode = "en-us"

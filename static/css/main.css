@@ -130,7 +130,7 @@ h4 {
 p {
   font-size: 1.75rem;
   line-height: 2rem;
-  margin: 1.5rem .5rem;
+  margin: 3rem .5rem 3rem .5rem;
   width: 90%;
   text-align: left;
 }
@@ -333,6 +333,13 @@ header a:hover {
 
 form {
   margin-top: 2em;
+  width: 50%;
+}
+
+form p {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
 }
 
 fieldset {
@@ -360,7 +367,9 @@ input[type="email"],
 textarea {
   border: .0625rem solid hsl(0, 0%, 60%);
   font: inherit;
+  margin: 1rem 0;
   padding: .125rem .25rem;
+  float: left;
 }
 
 .radio-form-group {
@@ -409,6 +418,7 @@ button {
   padding: .25rem 1rem;
   color: #fff;
   border-radius: 5px;
+  font-size: .75rem;
 }
 
 button:hover {
@@ -418,8 +428,9 @@ button:hover {
 button {
   transition: background-color 0.5s;
 }
+
 input {
-  margin-top: 1rem;
+  margin: 0 .75rem;
   height: 3rem;
 }
 input,

@@ -10,3 +10,57 @@ title = "(m)otherboard"
   individualistic convenience<br />
   to collective good.
 </p>
+
+<form class="send_message_form message form" name="contact-form" method="post" action="/contact-thanks" data-modal-id="modal-notify" data-netlify="true" netlify-honeypot="bot-field">
+  <div class="form-group">
+    <label class="hidden">
+      <input name="bot-field">
+      <input name="subject" value="(m)otherboard contact form">
+    </label>
+  </div>
+  <div class="form-group">
+    <label>
+      <p>Name</p>
+      <input name="name" type="text" required>
+    </label>
+  </div>
+  <div class="form-group">
+    <label>
+      <p>E-mail</p>
+      <input name="email" type="email" required>
+    </label>
+  </div>
+  <fieldset>
+    <button type="submit" class="button">I'm Interested</button>
+  </fieldset>
+</form>
+
+<p id="confirmation-message" class="hidden">
+  <em>We'll be in touch!</em>
+</p>
+
+<script language="javascript">
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const myForm = event.target;
+    const formData = new FormData(myForm);
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => toggleConfirm())
+      .catch((error) => alert(error));
+  };
+
+  document.querySelector("form").addEventListener("submit", handleSubmit);
+
+  function toggleConfirm() {
+    document.querySelector("form").style.display = "none";
+    document.getElementById("confirmation-message").style.display = "block";
+  }
+
+</script>
