@@ -367,6 +367,14 @@ textarea {
   resize: none;
 }
 
+.one-tab-two-spaces {
+  padding-left: 2rem;
+}
+
+.two-tabs-four-spaces {
+  padding-left: 4rem;
+}
+
 /* Media queries */
 
 @media (min-width: 30px) {
