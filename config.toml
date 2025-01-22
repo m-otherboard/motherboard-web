@@ -3,6 +3,7 @@ baseURL = "https://m.otherboard.org"
 # canonifyURLs = true
 languageCode = "en-us"
 title = "(m)otherboard"
+summary = "Bending the arc of technology from individualistic convenience to collective good."
 
 DefaultContentLanguage = "en"
 hasCJKLanguage = true
