@@ -11,62 +11,6 @@ title = "(m)otherboard"
   to collective good.
 </p>
 
-<a id="interested-link" onclick="showForm();"><em>Interested?</em></a>
+<p><em>Interested?</em></p>
 
-<form id="contact-form" class="send_message_form message form hidden" name="contact-form" method="post" action="/contact-thanks" data-modal-id="modal-notify" data-netlify="true" netlify-honeypot="bot-field">
-  <div class="form-group">
-    <label class="hidden">
-      <input name="bot-field">
-      <input name="subject" value="(m)otherboard contact form">
-    </label>
-  </div>
-  <div class="form-group">
-    <label>
-      <p>Name</p>
-      <input name="name" type="text" required>
-    </label>
-  </div>
-  <div class="form-group">
-    <label>
-      <p>E-mail</p>
-      <input name="email" type="email" required>
-    </label>
-  </div>
-  <fieldset>
-    <button type="submit" class="button">I'm interested.</button>
-  </fieldset>
-</form>
-
-<p id="confirmation-message" class="hidden">
-  <em>We'll be in touch!</em>
-</p>
-
-<script language="javascript">
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
-    const myForm = event.target;
-    const formData = new FormData(myForm);
-
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
-    })
-      .then(() => toggleConfirm())
-      .catch((error) => alert(error));
-  };
-
-  document.querySelector("form").addEventListener("submit", handleSubmit);
-
-  function toggleConfirm() {
-    document.querySelector("form").style.display = "none";
-    document.getElementById("confirmation-message").style.display = "block";
-  }
-
-  function showForm() {
-    document.getElementById('contact-form').classList.remove("hidden");
-    document.getElementById('interested-link').classList.add("hidden");
-  }
-</script>
+<div style="min-height: 58px;max-width: 440px;margin: 1rem;width: 100%"><script src="https://cdn.jsdelivr.net/ghost/signup-form@~0.2/umd/signup-form.min.js" data-button-color="#FFDA00" data-button-text-color="#000000" data-site="https://m-otherboard.ghost.io/" data-locale="en" async></script></div>
