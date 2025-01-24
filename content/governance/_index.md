@@ -2,6 +2,9 @@
 title = "(m)otherboard community compact"
 +++
 
+# Mission
+(m)otherboard is a collective of people and projects bending the arc of technology from individualistic convenience to collective good. We are rooted in histories, grounded in awareness of the present, and inspired by audacious visions for the future. Our work manifests through story-driven projects, direct community support, and transformative initiatives that challenge traditional tech narratives.
+
 # Community Compact
 
 1. [Decision-Making Norms](/governance/decision-making-norms)
