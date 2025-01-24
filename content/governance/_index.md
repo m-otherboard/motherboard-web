@@ -1,10 +1,10 @@
 +++
-title = "(m)otherboard community charter"
+title = "(m)otherboard community compact"
 +++
 
-# (m)otherboard Community Compact
+# Community Compact
 
-* [Decision-Making Norms](/governance/decision-making-norms)
-* [Fundamental Rights, Responsibilities, and Privileges](/governance/fundamental-rights)
-* [Roles](/governance/roles)
+1. [Decision-Making Norms](/governance/decision-making-norms)
+2. [Fundamental Rights, Responsibilities, and Privileges](/governance/fundamental-rights)
+3. [Roles](/governance/roles)
 

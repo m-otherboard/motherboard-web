@@ -1,8 +1,8 @@
 +++
-title = "(m)otherboard community charter"
+title = "(m)otherboard community compact"
 +++
 
-# (m)otherboard Community Compact
+# Community Compact
 
 [Back](/governance)
 
