@@ -33,6 +33,10 @@ body {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  background-image: url("/images/photocopy-background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
 }
 
 header,
@@ -392,7 +396,7 @@ textarea {
 @media (min-width: 30px) {
 
   body {
-    border-top: 13rem solid var(--color-primary);
+    padding-top: 13rem;
   }
 
   nav {
