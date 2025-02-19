@@ -125,7 +125,7 @@ h3 {
   font-size: 2rem;
   font-weight: 500;
   line-height: 3rem;
-  margin: 1.5rem 0;
+  margin: 1.5rem 0 .5 0;
 }
 
 h4 {
@@ -134,10 +134,15 @@ h4 {
 
 p {
   font-size: 1.25rem;
-  line-height: 1.25rem;
+  line-height: 2rem;
   margin: 3rem .5rem 3rem .5rem;
   width: 90%;
   text-align: left;
+}
+
+.bordered {
+  padding-bottom: 3rem;
+  border-bottom: 3px solid var(--color-black);
 }
 
 /* Inline Elements */
