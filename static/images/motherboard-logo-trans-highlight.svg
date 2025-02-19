@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="677.6279 1061.2559 371.12 331.2168" width="371.12" height="331.2168">
+  <defs/>
+  <g id="Variations" fill-opacity="1" stroke="none" stroke-dasharray="none" fill="none" stroke-opacity="1">
+    <title>Variations</title>
+    <g id="Variations_Layer_1">
+      <title>Layer 1</title>
+      <g id="Group_109">
+        <g id="Graphic_108">
+          <rect x="694.7848" y="1147.732" width="336.80625" height="158.26465" fill="#ffda00" fill-opacity=".5133744"/>
+        </g>
+        <g id="Group_103">
+          <g id="Group_105">
+            <g id="Graphic_107">
+              <text transform="translate(719.9903 1066.2559)" fill="black">
+                <tspan font-family="Futura" font-size="212" fill="black" x="0" y="220" xml:space="preserve">(  )</tspan>
+              </text>
+            </g>
+            <g id="Graphic_106">
+              <text transform="translate(794.4239 1110.0122)" fill="black">
+                <tspan font-family="Monograf" font-size="225" fill="black" x="0" y="164" xml:space="preserve">m</tspan>
+              </text>
+            </g>
+          </g>
+          <g id="Graphic_104">
+            <text transform="translate(682.6279 1344.0727)" fill="black">
+              <tspan font-family="Monograf" font-size="37" fill="black" x="0" y="27" xml:space="preserve">m.otherboard.org</tspan>
+            </text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
