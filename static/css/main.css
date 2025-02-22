@@ -394,7 +394,6 @@ textarea {
 .book-club-cover {
   transform: rotate(2deg);
   background-color: var(--color-red);
-  opacity: .85;
   padding: .15rem;
 }
 
