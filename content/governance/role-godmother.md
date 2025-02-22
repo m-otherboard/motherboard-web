@@ -1,5 +1,6 @@
 +++
 title = "(m)otherboard community compact"
+summary = "The rights, responsibilities, and privileges of Godmothers."
 +++
 
 # Community Compact

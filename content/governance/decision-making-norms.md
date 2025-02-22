@@ -1,5 +1,6 @@
 +++
 title = "(m)otherboard community compact"
+summary = "A look at how (m)otherboard makes decisions."
 +++
 
 # Community Compact

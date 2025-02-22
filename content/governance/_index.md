@@ -1,5 +1,6 @@
 +++
 title = "(m)otherboard community compact"
+summary = "Learn about the accountable and transparent governance of the (m)otherboard community."
 +++
 
 # Mission

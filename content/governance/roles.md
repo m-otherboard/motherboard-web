@@ -1,5 +1,6 @@
 +++
 title = "(m)otherboard community compact"
+summary = "An overview of the kinds of membership roles in the (m)otherboard organization."
 +++
 
 # Community Compact
