@@ -1,5 +1,6 @@
 +++
 title = "(m)otherboard community compact"
+summary = "The fundamental rights, responsibilities, and privileges of members of the (m)otherboard community."
 +++
 
 # Community Compact

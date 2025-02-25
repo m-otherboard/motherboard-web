@@ -26,7 +26,7 @@ html {
 
 body {
   color: var(--color-black);
-  font: 300 1.25rem/1.875rem "Monograf", monospace;
+  font: 300 1.25rem/1.5rem "Monograf", monospace;
   font-synthesis: none;
   min-height: 100%;
   -moz-text-size-adjust: 100%;
@@ -115,9 +115,9 @@ h1 {
 }
 
 h2 {
-  font-size: 2.25rem;
+  font-size: 1.75rem;
   font-weight: 500;
-  line-height: 3rem;
+  line-height: 2rem;
   margin: 1.5rem 0;
 }
 
@@ -139,7 +139,7 @@ h4 {
 p {
   font-size: 1.25rem;
   line-height: 2rem;
-  margin: 3rem .5rem 3rem .5rem;
+  margin: 2rem .5rem 2rem .5rem;
   width: 90%;
   text-align: left;
 }
@@ -391,6 +391,17 @@ textarea {
   padding-left: 4rem;
 }
 
+.book-club-cover {
+  transform: rotate(2deg);
+  background-color: var(--color-red);
+  padding: .15rem;
+}
+
+.book-club-cover img {
+  width: 100%;
+  transform: rotate(-3deg);
+}
+
 /* Media queries */
 
 @media (min-width: 30px) {
@@ -432,6 +443,11 @@ textarea {
     font-size: 1rem;
   }
 
+  .book-club-cover {
+    float: right;
+    width: 35%;
+    margin: 0 0 3rem 3rem;
+  }
   /* header nav li {
     font-size: .75rem;
   } */
