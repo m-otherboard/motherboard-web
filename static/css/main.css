@@ -410,15 +410,39 @@ textarea {
 /* Media queries */
 
 .column {
-  text-align: center;
-  min-width: 6rem;
-  max-width: 25rem;
-  margin: 1rem;
-  padding: 1rem;
+  width: 40%;
+  margin: 0rem 5rem 0 0;
 }
 
 .column img {
-  width: 90%;
+  width: 100%;
+}
+
+.column ul {
+  margin-left: 1rem;
+}
+
+.clipart-frame-1 {
+  transform: rotate(-3deg);
+  background-color: var(--color-green);
+  padding: .15rem;
+}
+
+.clipart-frame-1 img {
+  width: 100%;
+  transform: rotate(5deg);
+  opacity: 0.85;
+}
+
+.clipart-frame-2 {
+  transform: rotate(3deg);
+  padding: .15rem;
+}
+
+.clipart-frame-2 img {
+  width: 100%;
+  transform: rotate(-4deg);
+  opacity: 0.85;
 }
 
 @media (min-width: 30px) {
