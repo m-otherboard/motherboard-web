@@ -402,7 +402,24 @@ textarea {
   transform: rotate(-3deg);
 }
 
+.columns {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
 /* Media queries */
+
+.column {
+  text-align: center;
+  min-width: 6rem;
+  max-width: 25rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.column img {
+  width: 90%;
+}
 
 @media (min-width: 30px) {
 
