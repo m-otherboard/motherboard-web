@@ -111,7 +111,7 @@ th {
 /* Headers */
 h1 {
   font-size: 2.75rem;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 3rem;
   margin: 3rem 0;
 }
@@ -155,7 +155,7 @@ p {
 a {
   color: var(--color-black);
   background-color: var(--color-yellow);
-  font-weight: 500;
+  /* font-weight: 500; */
   text-decoration: underline;
   transition: color 125ms, background-color 125ms;
   text-align: left;
@@ -170,12 +170,12 @@ a:hover {
 
 a span {
   color: var(--color-black);
-  font-weight: 300;
+  /* font-weight: 300; */
 }
 
 a[href="#TODO"]::before {
   content: "TODO: ";
-  font-weight: 600;
+  font-weight: 500;
   color: #000000;
 }
 
@@ -234,7 +234,7 @@ header figure {
 
 header figcaption {
   font-size: 3.625rem;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 header nav ul {
@@ -258,7 +258,7 @@ header nav a {
 
 header a {
   color: #fff;
-  font-weight: 500;
+  font-weight: 300;
   text-decoration: none;
 }
 
