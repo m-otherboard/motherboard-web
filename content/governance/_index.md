@@ -12,3 +12,5 @@ summary = "Learn about the accountable and transparent governance of the (m)othe
 2. [Fundamental Rights, Responsibilities, and Privileges](/governance/fundamental-rights)
 3. [Roles](/governance/roles)
 
+# Code of Conduct
+Our [code of conduct](/governance/code-of-conduct) is enforced fairly and firmly. By participating in this community you agree to abide by its terms in good faith.
