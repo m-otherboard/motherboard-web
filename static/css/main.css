@@ -476,6 +476,10 @@ textarea {
     font-size: 2rem;
   }
 
+  .column {
+    width: 80%;
+  }
+
   .logo {
     height: auto;
     width: 100%;
@@ -492,8 +496,9 @@ textarea {
     width: 35%;
     margin: 0 0 3rem 3rem;
   }
-  /* header nav li {
-    font-size: .75rem;
-  } */
+
+  .column {
+    width: 40%;
+  }  
 
 }
