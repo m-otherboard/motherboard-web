@@ -411,7 +411,7 @@ textarea {
 
 .column {
   width: 40%;
-  margin: 0rem 5rem 0 0;
+  margin: 0rem 3rem 0 0;
 }
 
 .column img {
@@ -435,13 +435,16 @@ textarea {
 }
 
 .clipart-frame-2 {
-  transform: rotate(4.5deg);
+  /* transform: rotate(4.5deg);
+  background-color: var(--color-orange); */
   padding: .15rem;
+  margin: 1rem auto;
+  text-align: center;
 }
 
 .clipart-frame-2 img {
-  width: 100%;
-  transform: rotate(-4deg);
+  width: 75%;
+  transform: rotate(-2deg);
   opacity: 0.85;
 }
 
