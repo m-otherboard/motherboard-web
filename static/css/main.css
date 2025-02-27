@@ -427,6 +427,11 @@ sup {
   margin-left: 1rem;
 }
 
+.column-left {
+  padding-right: 2rem; 
+  border-right: 2px dotted var(--color-grey-dark);
+}
+
 .clipart-frame-1 {
   transform: rotate(-3deg);
   background-color: var(--color-green);
