@@ -406,6 +406,7 @@ sup {
 .book-club-cover img {
   width: 100%;
   transform: rotate(-3deg);
+  border: 2px dashed var(--color-grey-light);
 }
 
 .columns {
