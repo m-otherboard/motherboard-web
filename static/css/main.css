@@ -385,6 +385,10 @@ textarea {
   resize: none;
 }
 
+sup {
+  display: inline-block;
+  transform: rotate(3deg);
+}
 .one-tab-two-spaces {
   padding-left: 2rem;
 }
