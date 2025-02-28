@@ -9,7 +9,7 @@ summary = "The rights, responsibilities, and privileges of Partners."
 
 # 3\. Roles
 
-## 5\. Partners
+## 6\. Partners
 
 ### Role
 

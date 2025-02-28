@@ -475,6 +475,15 @@ sup {
   border-radius: 55rem;
 }
 
+.inline-image {
+  text-align: center;
+}
+
+.inline-image img {
+  width: 65%;
+  margin: 1rem auto;
+}
+
 /* Media queries */
 
 @media (min-width: 30px) {
