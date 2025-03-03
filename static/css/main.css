@@ -15,6 +15,8 @@
   --color-blue: hsl(198, 90%, 40%);
   --color-black: #000;
   --color-white: #FFF;
+  --color-grey-dark: #444;
+  --color-grey-light: #ccc;
   --color-todo: #FFFFBF;
 }
 
@@ -109,7 +111,7 @@ th {
 /* Headers */
 h1 {
   font-size: 2.75rem;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 3rem;
   margin: 3rem 0;
 }
@@ -153,7 +155,7 @@ p {
 a {
   color: var(--color-black);
   background-color: var(--color-yellow);
-  font-weight: 500;
+  /* font-weight: 500; */
   text-decoration: underline;
   transition: color 125ms, background-color 125ms;
   text-align: left;
@@ -168,12 +170,12 @@ a:hover {
 
 a span {
   color: var(--color-black);
-  font-weight: 300;
+  /* font-weight: 300; */
 }
 
 a[href="#TODO"]::before {
   content: "TODO: ";
-  font-weight: 600;
+  font-weight: 500;
   color: #000000;
 }
 
@@ -232,7 +234,7 @@ header figure {
 
 header figcaption {
   font-size: 3.625rem;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 header nav ul {
@@ -256,7 +258,7 @@ header nav a {
 
 header a {
   color: #fff;
-  font-weight: 500;
+  font-weight: 300;
   text-decoration: none;
 }
 
@@ -383,6 +385,10 @@ textarea {
   resize: none;
 }
 
+sup {
+  display: inline-block;
+  transform: rotate(3deg);
+}
 .one-tab-two-spaces {
   padding-left: 2rem;
 }
@@ -400,6 +406,82 @@ textarea {
 .book-club-cover img {
   width: 100%;
   transform: rotate(-3deg);
+  border: 2px dashed var(--color-grey-light);
+}
+
+.columns {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  width: 40%;
+  margin: 0rem 3rem 0 0;
+}
+
+.column img {
+  width: 100%;
+}
+
+.column ul {
+  margin-left: 1rem;
+}
+
+.column-left {
+  padding-right: 2rem; 
+  border-right: 2px dotted var(--color-grey-dark);
+}
+
+.clipart-frame-1 {
+  transform: rotate(-3deg);
+  background-color: var(--color-green);
+  padding: .15rem;
+}
+
+.clipart-frame-1 img {
+  width: 100%;
+  transform: rotate(5deg);
+  opacity: 0.85;
+}
+
+.clipart-frame-2 {
+  /* transform: rotate(4.5deg); */
+  background-color: var(--color-orange);
+  padding: .15rem;
+  margin: 1rem auto;
+  border-radius: 100rem;
+  text-align: center;
+}
+
+.clipart-frame-2 img {
+  width: 75%;
+  transform: rotate(-2deg);
+  opacity: 0.85;
+}
+
+.clipart-frame-3 {
+  width: 21rem;
+  height: 21rem;
+  background-color: var(--color-white);
+  margin: 2.25rem auto;
+  border-radius: 55rem;
+  border: 3px solid var(--color-grey-light);
+  /* box-shadow: 0px 0px 10px var(--color-orange); */
+}
+
+.clipart-frame-3 img {
+  opacity: 1;
+  height: 21rem;
+  border-radius: 55rem;
+}
+
+.inline-image {
+  text-align: center;
+}
+
+.inline-image img {
+  width: 65%;
+  margin: 1rem auto;
 }
 
 /* Media queries */
@@ -432,6 +514,10 @@ textarea {
     font-size: 2rem;
   }
 
+  .column {
+    width: 80%;
+  }
+
   .logo {
     height: auto;
     width: 100%;
@@ -448,8 +534,9 @@ textarea {
     width: 35%;
     margin: 0 0 3rem 3rem;
   }
-  /* header nav li {
-    font-size: .75rem;
-  } */
+
+  .column {
+    width: 40%;
+  }  
 
 }
