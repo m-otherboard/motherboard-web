@@ -69,13 +69,15 @@ header {
 }
 
 footer {
-  font-size: .875rem;
   text-align: center;
   padding: 1.5rem;
+  width: 75%;
+  margin: 1rem auto;
 }
 
 footer p {
   text-align: center;
+  font-size: .875rem;
 }
 
 blockquote {
