@@ -73,13 +73,14 @@ footer {
   text-align: center;
   padding: 1.5rem;
   width: 75%;
-  margin: 1rem auto;
+  margin: 5rem auto;
   border-top: 1px dotted var(--color-grey-light);
 }
 
 footer p {
   text-align: center;
   font-size: .875rem;
+  margin-bottom: 0rem;
 }
 
 blockquote {
@@ -146,8 +147,7 @@ h4 {
 p {
   font-size: 1.25rem;
   line-height: 2rem;
-  margin: .5rem 0rem;
-  width: 90%;
+  margin: .5rem 0rem 2rem 0rem;
   text-align: left;
 }
 
@@ -167,6 +167,7 @@ article {
 .portfolio article {
   background: #000000;
   color: var(--color-white);
+  border: none;
 }
 
 .portfolio :nth-child(1n) { background: var(--color-red); }
@@ -330,7 +331,7 @@ nav li:nth-child(6n) { transform:rotate(43deg); }
 /* Form controls */
 
 form {
-  margin-top: 2em;
+  margin: 2rem 0rem;
   width: 50%;
 }
 
@@ -362,6 +363,7 @@ label > :first-child {
 button,
 input[type="text"],
 input[type="email"],
+input[type="submit"],
 textarea {
   font: inherit;
   background: var(--color-yellow);
@@ -369,6 +371,11 @@ textarea {
   padding: .125rem .25rem;
   float: left;
   border: none;
+}
+
+input[type="submit"] {
+  background: var(--color-black);
+  color: var(--color-white);
 }
 
 .radio-form-group {
