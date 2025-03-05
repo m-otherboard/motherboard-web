@@ -8,7 +8,7 @@
 /* Variables */
 :root {
   --color-primary: #fff;
-  --color-yellow: #F8DB49;
+  --color-yellow: color(display-p3 0.98 0.895 0.467);
   --color-green: hsl(153, 90%, 30%);
   --color-orange: hsl(18, 100%, 50%);
   --color-red: hsl(333, 100%, 40%);
@@ -270,6 +270,12 @@ nav a:focus,
 nav a:hover {
   text-decoration: none;
 }
+
+nav li:nth-child(2n) { transform:rotate(-2deg); }
+nav li:nth-child(3n) { transform:rotate(2deg); }
+nav li:nth-child(4n) { transform:rotate(-3deg); }
+nav li:nth-child(5n) { transform:rotate(-4deg); }
+nav li:nth-child(6n) { transform:rotate(4deg); }
 
 .hidden {
   display: none;
