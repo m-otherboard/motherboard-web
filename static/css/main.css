@@ -17,6 +17,7 @@
   --color-white: #FFF;
   --color-grey-dark: #444;
   --color-grey-light: #ccc;
+  --color-grey-lightest: #eee;
   --color-todo: #FFFFBF;
 }
 
@@ -46,7 +47,7 @@ section {
   box-sizing: border-box;
   margin: 0 auto;
   width: 75%;
-  padding: 4% 1.5rem;
+  padding: 2rem;
 }
 
 ul,
@@ -73,6 +74,7 @@ footer {
   padding: 1.5rem;
   width: 75%;
   margin: 1rem auto;
+  border-top: 1px dotted var(--color-grey-light);
 }
 
 footer p {
@@ -130,10 +132,11 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.25rem;
   font-weight: 500;
-  line-height: 3rem;
+  line-height: 1.5rem;
   margin: 1.5rem 0 .5 0;
+  width: auto;
 }
 
 h4 {
@@ -143,11 +146,40 @@ h4 {
 p {
   font-size: 1.25rem;
   line-height: 2rem;
-  margin: 2rem .5rem 2rem .5rem;
+  margin: .5rem 0rem;
   width: 90%;
   text-align: left;
 }
 
+.articles {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+article {
+  padding: 2rem;
+  border: 2px dashed var(--color-grey-light);
+  width: 40%;
+  margin: 2rem 2rem 2rem 0;
+  background: var(--color-grey-lightest);
+}
+
+.portfolio article {
+  background: #000000;
+  color: var(--color-white);
+}
+
+.portfolio :nth-child(1n) { background: var(--color-red); }
+portfolio :nth-child(2n) { transform:rotate(2deg); }
+portfolio :nth-child(3n) { transform:rotate(-3deg); }
+portfolio :nth-child(4n) { transform:rotate(1deg); }
+portfolio :nth-child(5n) { transform:rotate(3deg); }
+portfolio :nth-child(6n) { transform:rotate(1deg); }
+
+.portfolio a, .portfolio em {
+  /* color: var(--color-white); */
+  background-color: var(--color-white) !important;
+}
 .bordered {
   padding-bottom: 3rem;
   border-bottom: 3px solid var(--color-black);
@@ -274,8 +306,8 @@ nav a:hover {
 nav li:nth-child(2n) { transform:rotate(-2deg); }
 nav li:nth-child(3n) { transform:rotate(2deg); }
 nav li:nth-child(4n) { transform:rotate(-3deg); }
-nav li:nth-child(5n) { transform:rotate(-4deg); }
-nav li:nth-child(6n) { transform:rotate(4deg); }
+nav li:nth-child(5n) { transform:rotate(2deg); }
+nav li:nth-child(6n) { transform:rotate(43deg); }
 
 .hidden {
   display: none;
@@ -368,6 +400,8 @@ input[type="checkbox"] {
 
 em {
   background-color: var(--color-yellow);
+  color: var(--color-black);
+  padding: .25rem;
 }
 
 button {
