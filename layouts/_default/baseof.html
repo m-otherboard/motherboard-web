@@ -11,7 +11,12 @@
   </head>
   <body{{ with .Section }} id="{{ . }}"{{ end }}>
     <div>
-      {{ partial "header" . }}
+      <header>
+        {{ partial "header" . }}
+      </header>
+    </div>
+    <div>
+      {{ partial "navigation" . }}
     </div>
     <div id="veil">
       {{ block "main" . }}
