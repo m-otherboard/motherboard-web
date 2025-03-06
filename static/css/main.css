@@ -159,7 +159,7 @@ p {
 article {
   padding: 2rem;
   border: 2px dashed var(--color-grey-light);
-  margin: 2rem 2rem 2rem 0;
+  margin: 2rem auto;
   background: var(--color-grey-lightest);
 }
 
@@ -188,11 +188,10 @@ article img {
   border: none;
 }
 
-.portfolio article:nth-child(1n) { transform:rotate(1deg); background: var(--color-blue); }
-.portfolio article:nth-child(2n) { transform:rotate(0deg); background: var(--color-red); }
+.portfolio article:nth-child(1n) { transform:rotate(0deg); background: var(--color-red); }
+.portfolio article:nth-child(2n) { transform:rotate(1deg); background: var(--color-black); }
 .portfolio article:nth-child(3n) { transform:rotate(-2deg); background: var(--color-green); }
-.portfolio article:nth-child(4n) { transform:rotate(1deg); background: var(--color-black); }
-.portfolio article:nth-child(6n) { transform:rotate(-1deg); background: var(--color-red);}
+.portfolio article:nth-child(4n) { transform:rotate(1deg); background: var(--color-blue); }
 
 .portfolio a, .portfolio em {
   background-color: var(--color-white) !important;
@@ -508,7 +507,7 @@ sup {
 }
 
 .column-left {
-  padding-right: 2rem; 
+  padding-right: 2rem;
   border-right: 2px dotted var(--color-grey-dark);
 }
 
@@ -593,7 +592,7 @@ sup {
     margin-top: 1rem;
     font-size: .875rem;
   }
-  
+
   nav li:first-child {
     display: initial;
   }
@@ -636,7 +635,7 @@ sup {
  form {
    width: 60%;
  }
- 
+
  .book-club-cover {
     float: right;
     width: 35%;
@@ -645,7 +644,7 @@ sup {
 
   .column {
     width: 40%;
-  }  
+  }
 
   .articles article {
     width: 35%;
@@ -657,5 +656,5 @@ sup {
   .nav-crop {
     display: inline;
   }
-  
+
 }
