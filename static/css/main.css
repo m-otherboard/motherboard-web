@@ -540,6 +540,19 @@ sup {
   border-radius: 55rem;
 }
 
+.clipart-frame-4 {
+  width: 17rem;
+  height: 17rem;
+  background-color: var(--color-white);
+  margin: 2.25rem auto;
+  /* box-shadow: 0px 0px 10px var(--color-orange); */
+}
+
+.clipart-frame-4 img {
+  opacity: 1;
+  height: 100%;
+}
+
 .inline-image {
   text-align: center;
 }
