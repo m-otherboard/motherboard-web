@@ -163,6 +163,24 @@ article {
   background: var(--color-grey-lightest);
 }
 
+article img {
+  width: 90%;
+  margin: 1rem auto;
+  box-shadow: 0px 0px 5px var(--color-grey-light);
+}
+
+.extras article {
+  text-align: center;
+}
+
+.extras article p {
+  text-align: center;
+}
+
+.extras article img {
+  border: 1px dashed var(--color-grey-dark);
+}
+
 .portfolio article {
   background: #000000;
   color: var(--color-white);
@@ -184,12 +202,6 @@ article {
   color: var(--color-black);
   border: none;
   /* border: 1px dashed var(--color-blue); */
-  box-shadow: 0px 0px 5px var(--color-grey-light);
-}
-
-article img {
-  width: 90%;
-  margin: 1rem auto;
   box-shadow: 0px 0px 5px var(--color-grey-light);
 }
 
