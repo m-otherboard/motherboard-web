@@ -8,7 +8,7 @@
 /* Variables */
 :root {
   --color-primary: #fff;
-  --color-yellow: #F8DB49;
+  --color-yellow: color(display-p3 0.98 0.895 0.467);
   --color-green: hsl(153, 90%, 30%);
   --color-orange: hsl(18, 100%, 50%);
   --color-red: hsl(333, 100%, 40%);
@@ -17,6 +17,7 @@
   --color-white: #FFF;
   --color-grey-dark: #444;
   --color-grey-light: #ccc;
+  --color-grey-lightest: #eee;
   --color-todo: #FFFFBF;
 }
 
@@ -46,7 +47,7 @@ section {
   box-sizing: border-box;
   margin: 0 auto;
   width: 75%;
-  padding: 4% 1.5rem;
+  padding: 2rem;
 }
 
 ul,
@@ -69,13 +70,17 @@ header {
 }
 
 footer {
-  font-size: .875rem;
   text-align: center;
   padding: 1.5rem;
+  width: 75%;
+  margin: 5rem auto;
+  border-top: 1px dotted var(--color-grey-light);
 }
 
 footer p {
   text-align: center;
+  font-size: .875rem;
+  margin-bottom: 0rem;
 }
 
 blockquote {
@@ -128,10 +133,11 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.25rem;
   font-weight: 500;
-  line-height: 3rem;
-  margin: 1.5rem 0 .5 0;
+  line-height: 1.5rem;
+  margin: 1rem 0 1.5rem 0;
+  width: auto;
 }
 
 h4 {
@@ -141,9 +147,63 @@ h4 {
 p {
   font-size: 1.25rem;
   line-height: 2rem;
-  margin: 2rem .5rem 2rem .5rem;
-  width: 90%;
+  margin: .5rem 0rem 2rem 0rem;
   text-align: left;
+}
+
+.articles {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+article {
+  padding: 2rem;
+  border: 2px dashed var(--color-grey-light);
+  margin: 2rem auto;
+  background: var(--color-grey-lightest);
+}
+
+article img {
+  width: 90%;
+  margin: 1rem auto;
+  box-shadow: 0px 0px 5px var(--color-grey-light);
+}
+
+.extras article {
+  text-align: center;
+  border: none;
+}
+
+.extras article p {
+  text-align: center;
+}
+
+.extras article img {
+  border: 1px dashed var(--color-grey-dark);
+}
+
+.portfolio article {
+  background: #000000;
+  color: var(--color-white);
+  border: none;
+}
+
+.portfolio article:nth-child(1n) { transform:rotate(0deg); background: var(--color-red); }
+.portfolio article:nth-child(2n) { transform:rotate(1deg); background: var(--color-black); }
+.portfolio article:nth-child(3n) { transform:rotate(-2deg); background: var(--color-green); }
+.portfolio article:nth-child(4n) { transform:rotate(1deg); background: var(--color-blue); }
+
+.portfolio a, .portfolio em {
+  background-color: var(--color-white) !important;
+}
+
+.bios article {
+  background: var(--color-white);
+  color: var(--color-black);
+  border: none;
+  /* border: 1px dashed var(--color-blue); */
+  margin: 1rem auto;
+  box-shadow: 0px 0px 5px var(--color-grey-light);
 }
 
 .bordered {
@@ -166,11 +226,6 @@ a:hover {
   /* color: var(--color-primary-lighter); */
   text-decoration: underline;
   cursor: pointer;
-}
-
-a span {
-  color: var(--color-black);
-  /* font-weight: 300; */
 }
 
 a[href="#TODO"]::before {
@@ -237,35 +292,49 @@ header figcaption {
   font-weight: 300;
 }
 
-header nav ul {
+nav {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+nav ul {
   display: inline-flex;
+  flex-wrap: wrap;
   list-style-type: none;
-  margin: auto;
+  margin: 0 auto;
 }
 
-header nav li {
-  margin: 0.9rem;
-  font-size: 1rem;
+nav li {
+  padding: .25rem 1rem;
+  text-wrap: nowrap;
+  text-align: center;
 }
 
-header nav li:first-child {
+nav li:first-child {
   display: none;
 }
 
-header nav a {
+nav a {
   text-decoration: none;
-}
-
-header a {
   color: #fff;
+  background: none;
   font-weight: 300;
+  text-transform: uppercase;
+  background: var(--color-black);
+  padding: 0.25rem .5rem;
+}
+
+nav a:focus,
+nav a:hover {
   text-decoration: none;
 }
 
-header a:focus,
-header a:hover {
-  /* color: var(--color-primary-lightest); */
-}
+nav li:nth-child(2n) { transform:rotate(-2deg); }
+nav li:nth-child(3n) { transform:rotate(2deg); }
+nav li:nth-child(4n) { transform:rotate(-3deg); }
+nav li:nth-child(5n) { transform:rotate(2deg); }
+nav li:nth-child(6n) { transform:rotate(0deg); }
 
 .hidden {
   display: none;
@@ -274,8 +343,9 @@ header a:hover {
 /* Form controls */
 
 form {
-  margin-top: 2em;
-  width: 50%;
+  margin: 2rem auto;
+  padding: 2rem;
+  border: 5px dotted var(--color-red);
 }
 
 form p {
@@ -294,7 +364,7 @@ fieldset:last-child {
 
 label {
   display: block;
-  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
   font-weight: bold;
 }
 
@@ -306,13 +376,19 @@ label > :first-child {
 button,
 input[type="text"],
 input[type="email"],
+input[type="submit"],
 textarea {
   font: inherit;
   background: var(--color-yellow);
   margin: 1rem 0;
   padding: .125rem .25rem;
-  float: left;
+  /* float: left; */
   border: none;
+}
+
+input[type="submit"] {
+  background: var(--color-black);
+  color: var(--color-white);
 }
 
 .radio-form-group {
@@ -358,6 +434,8 @@ input[type="checkbox"] {
 
 em {
   background-color: var(--color-yellow);
+  color: var(--color-black);
+  padding: .25rem;
 }
 
 button {
@@ -389,6 +467,7 @@ sup {
   display: inline-block;
   transform: rotate(3deg);
 }
+
 .one-tab-two-spaces {
   padding-left: 2rem;
 }
@@ -428,7 +507,7 @@ sup {
 }
 
 .column-left {
-  padding-right: 2rem; 
+  padding-right: 2rem;
   border-right: 2px dotted var(--color-grey-dark);
 }
 
@@ -475,6 +554,19 @@ sup {
   border-radius: 55rem;
 }
 
+.clipart-frame-4 {
+  width: 17rem;
+  height: 17rem;
+  background-color: var(--color-white);
+  margin: 2.25rem auto;
+  /* box-shadow: 0px 0px 10px var(--color-orange); */
+}
+
+.clipart-frame-4 img {
+  opacity: 1;
+  height: 100%;
+}
+
 .inline-image {
   text-align: center;
 }
@@ -492,22 +584,29 @@ sup {
     padding-top: 13rem;
   }
 
-  nav {
-    background-color: #bc8c3d;
-    width: 100%;
-    margin-top: 2rem;
-    padding: .25rem;
-    height: 3.25rem;
-    /* border: 3px solid #eee; */
-    text-align: center;
-  }
-
   header {
     margin-top: -10.5rem;
   }
 
-  header nav li:first-child {
+  nav {
+    margin-top: 1rem;
+    font-size: .875rem;
+  }
+
+  nav li:first-child {
     display: initial;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .articles article {
+    width: 100%;
+  }
+
+  .nav-crop {
+    display: none;
   }
 
   header figcaption {
@@ -524,12 +623,20 @@ sup {
   }
 }
 
-@media (min-width: 640px) {
+@media (min-width: 750px) {
   html {
     font-size: 1rem;
   }
 
-  .book-club-cover {
+  nav {
+    font-size: 1rem;
+  }
+
+ form {
+   width: 60%;
+ }
+
+ .book-club-cover {
     float: right;
     width: 35%;
     margin: 0 0 3rem 3rem;
@@ -537,6 +644,17 @@ sup {
 
   .column {
     width: 40%;
-  }  
+  }
+
+  .articles article {
+    width: 35%;
+  }
+
+}
+
+@media (min-width: 900px) {
+  .nav-crop {
+    display: inline;
+  }
 
 }
