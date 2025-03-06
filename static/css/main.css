@@ -159,7 +159,6 @@ p {
 article {
   padding: 2rem;
   border: 2px dashed var(--color-grey-light);
-  width: 40%;
   margin: 2rem 2rem 2rem 0;
   background: var(--color-grey-lightest);
 }
@@ -170,15 +169,13 @@ article {
   border: none;
 }
 
-.portfolio :nth-child(1n) { background: var(--color-red); }
-portfolio :nth-child(2n) { transform:rotate(2deg); }
-portfolio :nth-child(3n) { transform:rotate(-3deg); }
-portfolio :nth-child(4n) { transform:rotate(1deg); }
-portfolio :nth-child(5n) { transform:rotate(3deg); }
-portfolio :nth-child(6n) { transform:rotate(1deg); }
+.portfolio article:nth-child(1n) { transform:rotate(1deg); background: var(--color-blue); }
+.portfolio article:nth-child(2n) { transform:rotate(0deg); background: var(--color-red); }
+.portfolio article:nth-child(3n) { transform:rotate(-2deg); background: var(--color-green); }
+.portfolio article:nth-child(4n) { transform:rotate(1deg); background: var(--color-black); }
+.portfolio article:nth-child(6n) { transform:rotate(-1deg); background: var(--color-red);}
 
 .portfolio a, .portfolio em {
-  /* color: var(--color-white); */
   background-color: var(--color-white) !important;
 }
 
@@ -186,7 +183,8 @@ portfolio :nth-child(6n) { transform:rotate(1deg); }
   background: var(--color-white);
   color: var(--color-black);
   border: none;
-  border-bottom: 1px dashed var(--color-blue);
+  /* border: 1px dashed var(--color-blue); */
+  box-shadow: 0px 0px 5px var(--color-grey-light);
 }
 
 article img {
@@ -331,8 +329,9 @@ nav li:nth-child(6n) { transform:rotate(43deg); }
 /* Form controls */
 
 form {
-  margin: 2rem 0rem;
-  width: 50%;
+  margin: 2rem auto;
+  padding: 2rem;
+  border: 5px dotted var(--color-red);
 }
 
 form p {
@@ -351,7 +350,7 @@ fieldset:last-child {
 
 label {
   display: block;
-  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
   font-weight: bold;
 }
 
@@ -369,7 +368,7 @@ textarea {
   background: var(--color-yellow);
   margin: 1rem 0;
   padding: .125rem .25rem;
-  float: left;
+  /* float: left; */
   border: none;
 }
 
@@ -454,6 +453,7 @@ sup {
   display: inline-block;
   transform: rotate(3deg);
 }
+
 .one-tab-two-spaces {
   padding-left: 2rem;
 }
@@ -570,6 +570,14 @@ sup {
     display: initial;
   }
 
+  form {
+    width: 100%;
+  }
+
+  .articles article {
+    width: 100%;
+  }
+
   .nav-crop {
     display: none;
   }
@@ -597,7 +605,11 @@ sup {
     font-size: 1rem;
   }
 
-  .book-club-cover {
+ form {
+   width: 60%;
+ }
+ 
+ .book-club-cover {
     float: right;
     width: 35%;
     margin: 0 0 3rem 3rem;
@@ -606,6 +618,10 @@ sup {
   .column {
     width: 40%;
   }  
+
+  .articles article {
+    width: 35%;
+  }
 
 }
 
