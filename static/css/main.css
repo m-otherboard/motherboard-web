@@ -171,6 +171,7 @@ article img {
 
 .extras article {
   text-align: center;
+  border: none;
 }
 
 .extras article p {
@@ -202,6 +203,7 @@ article img {
   color: var(--color-black);
   border: none;
   /* border: 1px dashed var(--color-blue); */
+  margin: 1rem auto;
   box-shadow: 0px 0px 5px var(--color-grey-light);
 }
 
