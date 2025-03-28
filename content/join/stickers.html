@@ -1,0 +1,29 @@
++++
+title = "(m)otherboard Sticker Pack"
+summary = "Members-only (m)otherboard sticker packs."
++++
+
+<p>
+  If you're a member and would like to receive the (m)otherboard sticker and zine pack by mail, please share your mailing address below.
+</p>
+
+<form name="mailing-address" method="post" action="/join/thanks" data-modal-id="modal-notify" data-netlify="true" netlify-honeypot="bot-field">
+  <label class="hidden">
+    <input name="bot-field">
+    <input type="hidden" name="subject" value="(m) Sticker Form">
+  </label>
+
+  <label for="email">Your name:</label>
+  <input name="name" type="text" required>
+  <br style="clear: both;"/>
+
+  <label for="email">Your e-mail:</label>
+  <input name="email" type="email" required>
+  <br style="clear: both;"/>
+
+  <label for=message">Your mailing address:</label>
+  <textarea name="message" required></textarea>
+  <br style="clear: both;"/>
+
+  <input type="submit" value="Submit" />
+</form>
