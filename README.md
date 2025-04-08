@@ -1,2 +1,1 @@
-# static-site-template
-Template repository for quick-to-build, responsive OES static sites.
+[m.otherboard.org](https://m.otherboard.org)
