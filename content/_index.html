@@ -21,6 +21,15 @@ title = "(m)otherboard"
   </article>
 
   <article>
+    <h3>Meet our GBI recipients!</h3>
+    <p>
+      Our Guaranteed Basic Income program supports tech justice leaders with no-strings-attached financial support. <a href="/what-we-do/gbi/">Learn about our GBI recipients</a>.
+    </p>
+  </article>
+
+
+
+  <article>
     <h3>We're Building a Community</h3>
     <p>
       Membership is now open! Join a community of your peers, get access to special members-only perks, and get a say in the work that (m)otherboard does. <a href="/join">Learn more</a>.
@@ -35,3 +44,20 @@ title = "(m)otherboard"
   </article>
 
 </div>
+
+<script language="javascript">
+
+  window.onload = function() {
+    randomizeBackgrounds();
+  };
+
+  function randomizeBackgrounds() {
+    const articles = document.querySelectorAll('article');
+    articles.forEach((article, i) => {
+      var hue = Math.floor(Math.random() * 360);
+      var pastel = `hsl(${hue}, 70%, 95%)`;
+      article.style.background = pastel;
+    });
+  }
+
+</script>
