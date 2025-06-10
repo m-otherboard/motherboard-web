@@ -18,29 +18,15 @@ summary = "A collection of gems from the (m)otherboard community"
 
   }
 
-  function randomizeBubbles() {
-    const bubblesRight = document.querySelectorAll('.bubble-right');
-    const bubblesLeft = document.querySelectorAll('.bubble-left');
-    const counts = ['01','02','03','04','05','06'];
-
-    bubblesRight.forEach(bubble => {
-      var identifierIndex = Math.floor(Math.random() * counts.length);
-      bubble.src = "/images/bubbles/bubble-right-" + counts[identifierIndex] + ".svg"
-    });
-    bubblesLeft.forEach(bubble => {
-      var identifierIndex = Math.floor(Math.random() * counts.length);
-      bubble.src = "/images/bubbles/bubble-left-" + counts[identifierIndex] + ".svg"
-    });
-
-  }
-
   function randomizeQuote(label) {
     const responses = document.querySelectorAll('.' + label);
     const displayIndex = Math.floor(Math.random() * responses.length);
+    var identifierIndex = Math.floor(Math.random() * 24) + 1;
     responses.forEach((response, i) => {
       response.classList.add('hidden');
     });
     responses[displayIndex].classList.remove('hidden');
+    responses[displayIndex].style.backgroundImage = 'url("/images/bubbles/bubble-' + String(identifierIndex).padStart(2, '0') + '.svg")';
   }
 
 </script>

@@ -215,9 +215,39 @@ article img {
 .pullquotes article {
   background: none;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: contain;
   color: var(--color-black);
   border: none;
+  animation-name: glide;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+.pullquotes .what-is-technology {
+  animation-duration: 3s;
+}
+
+.pullquotes .what-scares-you {
+  animation-duration: 6s;
+}
+
+.pullquotes .what-excites-you {
+  animation-duration: 4s;
+}
+
+.pullquotes .collective-good {
+  animation-duration: 7s;
+}
+
+@keyframes glide {
+  0% {
+    background-position: 80% 50%;
+  }
+  100% {
+   background-position: 0% 10%;
+  }
 }
 
 .pullquotes article img {

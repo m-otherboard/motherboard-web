@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="47.70111 72.34202 402.67017 254.66102" width="402.67017" height="254.66102">
+<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="47.70111 72.34202 402.67017 254.66102" width="402.67017" height="254.66102">
   <defs>
     <filter id="Shadow" filterUnits="userSpaceOnUse" x="7.434094" y="46.87592">
       <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="2.616"/>
@@ -13,7 +13,7 @@
       </feMerge>
     </filter>
   </defs>
-  <g id="Canvas_1" stroke="none" fill-opacity="1" stroke-dasharray="none" stroke-opacity="1" fill="none">
+  <g id="Canvas_1" stroke-opacity="1" fill-opacity="1" fill="none" stroke-dasharray="none" stroke="none">
     <title>Canvas 1</title>
     <g id="Canvas_1_Layer_1">
       <title>Layer 1</title>
