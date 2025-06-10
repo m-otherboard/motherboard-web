@@ -214,9 +214,8 @@ article img {
 
 .pullquotes article {
   background: none;
-  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-size: auto;
   color: var(--color-black);
   border: none;
 }

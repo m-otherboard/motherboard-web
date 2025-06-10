@@ -2,6 +2,9 @@
 
 <h3>What does technology mean to you?</h3>
 <div class="articles pullquotes">
+  <article>
+    <img class="bubble bubble-right" src="" alt="Thought bubble icon, designed to look like a cutout." />
+  </article>
   {{ range $i, $r := (after 1 $data) }}
     {{ if ne (index $r 1) "" }}
       <article class="what-is-technology hidden">
@@ -11,16 +14,10 @@
       </article>
     {{ end }}
   {{ end }}
-  <article>
-    <img class="bubble bubble-right" src="" alt="Thought bubble icon, designed to look like a cutout." />
-  </article>
 </div>
 
 <h3>What excites you about technology?</h3>
 <div class="articles pullquotes">
-  <article>
-    <img class="bubble bubble-left" alt="Thought bubble icon, designed to look like a cutout." />
-  </article>
   {{ range $i, $r := (after 1 $data) }}
     {{ if ne (index $r 2) "" }}
       <article class="what-excites-you hidden">
@@ -30,6 +27,9 @@
       </article>
     {{ end }}
   {{ end }}
+  <article>
+    <img class="bubble bubble-left" alt="Thought bubble icon, designed to look like a cutout." />
+  </article>
 </div>
 
 <h3>What scares you about technology?</h3>
