@@ -212,6 +212,19 @@ article img {
   border-bottom: 3px solid var(--color-black);
 }
 
+.pullquotes article {
+  background: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: var(--color-black);
+  border: none;
+}
+
+.pullquotes article img {
+  box-shadow: none;
+}
+
 /* Inline Elements */
 a {
   color: var(--color-black);
