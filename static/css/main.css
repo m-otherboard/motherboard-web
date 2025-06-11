@@ -701,3 +701,18 @@ sup {
   }
 
 }
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    marquee-style: none !important;
+    scroll-snap-type: none !important;
+    scroll-behavior: auto !important;
+  }
+  .animated {
+    display: none;
+  }
+  .static {
+    display: block;
+  }
+}
