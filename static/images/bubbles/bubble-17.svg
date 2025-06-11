@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="1947.3903 1029.9455 434.17786 316.11835" width="434.17786" height="316.11835">
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="1903.9725" y="998.3337">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="2.18"/>
+      <feOffset in="blur" result="offset" dx="0" dy="2"/>
+      <feFlood flood-color="black" flood-opacity=".5" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in" result="color"/>
+      <feMerge>
+        <feMergeNode in="color"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g id="Canvas_1" stroke-opacity="1" fill-opacity="1" fill="none" stroke-dasharray="none" stroke="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_40" filter="url(#Shadow)">
+        <path d="M 2266.5127 1043.8703 L 2266.5127 1043.8703 C 2266.5127 1043.8703 2266.5127 1045.5636 2267.546 1045.5636 C 2268.5793 1045.5636 2327.4773 1070.3982 2327.4773 1070.3982 C 2327.4773 1070.3982 2376.0422 1146.031 2376.559 1148.2887 C 2377.0755 1150.5464 2355.893 1235.2099 2353.3097 1235.2099 C 2350.7265 1235.2099 2230.3473 1283.7504 2230.3473 1283.7504 L 2270.1293 1332.2908 C 2270.1293 1332.2908 2218.981 1339.0639 2218.4644 1339.0639 C 2217.9477 1339.0639 2156.4666 1289.959 2154.9166 1289.3946 C 2153.3667 1288.8302 2007.6717 1257.7869 2007.6717 1257.7869 C 2007.6717 1257.7869 1952.3903 1185.5406 1952.3903 1184.4118 C 1952.3903 1183.283 1970.473 1092.9751 1970.473 1092.4107 C 1970.473 1091.8463 2077.4193 1053.4655 2077.4193 1052.9011 C 2077.4193 1052.3366 2164.733 1026.9376 2216.3978 1034.2751 C 2268.0627 1041.6126 2266.5127 1043.8703 2266.5127 1043.8703 Z M 1968.5077 1159.7255 L 1968.5077 1159.7255 C 1968.5077 1220.2223 2049.8437 1269.7701 2152.6151 1273.3272 C 2176.5354 1298.2385 2211.5595 1326.1603 2246.9637 1326.1603 C 2228.5894 1314.39 2216.9173 1290.5748 2209.835 1270.3167 C 2296.1487 1258.5464 2360.4509 1213.3799 2360.4509 1159.7255 C 2360.4509 1096.7648 2272.8006 1045.8491 2164.4793 1045.8491 C 2056.158 1045.8491 1968.5077 1096.7648 1968.5077 1159.7255 Z" fill="white"/>
+      </g>
+    </g>
+  </g>
+</svg>

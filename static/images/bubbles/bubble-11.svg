@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="1969.609 542.44945 434.17786 316.11835" width="434.17786" height="316.11835">
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="1926.1913" y="510.8376">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="2.18"/>
+      <feOffset in="blur" result="offset" dx="0" dy="2"/>
+      <feFlood flood-color="black" flood-opacity=".5" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in" result="color"/>
+      <feMerge>
+        <feMergeNode in="color"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g id="Canvas_1" stroke-opacity="1" fill-opacity="1" fill="none" stroke-dasharray="none" stroke="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_82" filter="url(#Shadow)">
+        <path d="M 2084.6645 556.3742 L 2084.6645 556.3742 C 2084.6645 556.3742 2084.6645 558.0675 2083.6312 558.0675 C 2082.598 558.0675 2023.7 582.9021 2023.7 582.9021 C 2023.7 582.9021 1975.135 658.5349 1974.6184 660.7926 C 1974.1017 663.0503 1995.2843 747.71385 1997.8676 747.71385 C 2000.4508 747.71385 2120.83 796.2543 2120.83 796.2543 L 2081.048 844.7947 C 2081.048 844.7947 2132.1962 851.5678 2132.7129 851.5678 C 2133.2295 851.5678 2194.7107 802.4629 2196.2607 801.8985 C 2197.8106 801.3341 2343.5055 770.2908 2343.5055 770.2908 C 2343.5055 770.2908 2398.787 698.0446 2398.787 696.9157 C 2398.787 695.7869 2380.7042 605.4791 2380.7042 604.91466 C 2380.7042 604.3502 2273.758 565.9694 2273.758 565.405 C 2273.758 564.8406 2186.4443 539.4415 2134.7795 546.779 C 2083.1146 554.1165 2084.6645 556.3742 2084.6645 556.3742 Z M 2382.6696 672.22946 L 2382.6696 672.22946 C 2382.6696 732.7262 2301.3336 782.274 2198.562 785.8312 C 2174.6418 810.7424 2139.6178 838.6642 2104.2136 838.6642 C 2122.5879 826.8939 2134.26 803.0787 2141.3423 782.8206 C 2055.0286 771.05035 1990.7264 725.8838 1990.7264 672.22946 C 1990.7264 609.2688 2078.3767 558.35306 2186.698 558.35306 C 2295.0193 558.35306 2382.6696 609.2688 2382.6696 672.22946 Z" fill="white"/>
+      </g>
+    </g>
+  </g>
+</svg>
