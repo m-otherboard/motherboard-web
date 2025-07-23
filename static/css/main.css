@@ -521,14 +521,14 @@ sup {
 
 .book-club-cover {
   transform: rotate(2deg);
-  background-color: var(--color-red);
-  padding: .15rem;
+  background-color: var(--color-green);
+  padding: .25rem;
 }
 
 .book-club-cover img {
   width: 100%;
   transform: rotate(-3deg);
-  border: 2px dashed var(--color-grey-light);
+  /* border: 5px solid var(--color-grey-light); */
 }
 
 .columns {
