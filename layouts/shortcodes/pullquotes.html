@@ -1,63 +1,67 @@
-{{ $data := getCSV "," (.Get 0) }}
+  {{ with $file := .Get 0 }}
+    {{ with resources.Get $file }}
+      {{ with $data := . | transform.Unmarshal }}
+        <div class="articles pullquotes">
+          {{ range $i, $r := (after 1 $data) }}
+            {{ if ne (index $r 1) "" }}
+              <article class="what-is-technology hidden">
+                <h3>
+                  <a onclick="randomizeQuote('what-is-technology');">
+                    What does technology mean to you?
+                  </a>
+                </h3>
+                <p>
+                  {{ index $r 1 }} <br />–{{ index $r 0 }}
+                </p>
+              </article>
+            {{ end }}
+          {{ end }}
 
-<div class="articles pullquotes">
-  {{ range $i, $r := (after 1 $data) }}
-    {{ if ne (index $r 1) "" }}
-      <article class="what-is-technology hidden">
-        <h3>
-          <a onclick="randomizeQuote('what-is-technology');">
-            What does technology mean to you?
-          </a>
-        </h3>
-        <p>
-          {{ index $r 1 }} <br />–{{ index $r 0 }}
-        </p>
-      </article>
-    {{ end }}
-  {{ end }}
+          {{ range $i, $r := (after 1 $data) }}
+            {{ if ne (index $r 2) "" }}
+              <article class="what-excites-you hidden">
+                <h3>
+                  <a onclick="randomizeQuote('what-excites-you');">
+                    What excites you about technology?
+                  </a>
+                </h3>
+                <p>
+                  {{ index $r 2 }} <br />–{{ index $r 0 }}
+                </p>
+              </article>
+            {{ end }}
+          {{ end }}
 
-  {{ range $i, $r := (after 1 $data) }}
-    {{ if ne (index $r 2) "" }}
-      <article class="what-excites-you hidden">
-        <h3>
-          <a onclick="randomizeQuote('what-excites-you');">
-            What excites you about technology?
-          </a>
-        </h3>
-        <p>
-          {{ index $r 2 }} <br />–{{ index $r 0 }}
-        </p>
-      </article>
-    {{ end }}
-  {{ end }}
+          {{ range $i, $r := (after 1 $data) }}
+            {{ if ne (index $r 3) "" }}
+              <article class="what-scares-you hidden">
+                <h3>
+                  <a onclick="randomizeQuote('what-scares-you');">
+                    What scares you about technology?
+                  </a>
+                </h3>
+                <p>
+                  {{ index $r 3 }} <br />–{{ index $r 0 }}
+                </p>
+              </article>
+            {{ end }}
+          {{ end }}
 
-  {{ range $i, $r := (after 1 $data) }}
-    {{ if ne (index $r 3) "" }}
-      <article class="what-scares-you hidden">
-        <h3>
-          <a onclick="randomizeQuote('what-scares-you');">
-            What scares you about technology?
-          </a>
-        </h3>
-        <p>
-          {{ index $r 3 }} <br />–{{ index $r 0 }}
-        </p>
-      </article>
-    {{ end }}
+          {{ range $i, $r := (after 1 $data) }}
+            {{ if ne (index $r 4) "" }}
+              <article class="collective-good hidden">
+                <h3>
+                  <a onclick="randomizeQuote('collective-good');">
+                    How would you define 'collective good'?
+                  </a>
+                </h3>
+                <p>
+                  {{ index $r 4 }} <br />–{{ index $r 0 }}
+                </p>
+              </article>
+            {{ end }}
+          {{ end }}
+        </div>
+      {{ end }}
   {{ end }}
-
-  {{ range $i, $r := (after 1 $data) }}
-    {{ if ne (index $r 4) "" }}
-      <article class="collective-good hidden">
-        <h3>
-          <a onclick="randomizeQuote('collective-good');">
-            How would you define 'collective good'?
-          </a>
-        </h3>
-        <p>
-          {{ index $r 4 }} <br />–{{ index $r 0 }}
-        </p>
-      </article>
-    {{ end }}
-  {{ end }}
-</div>
+{{ end }}
