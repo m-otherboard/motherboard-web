@@ -9,7 +9,7 @@ summary = "An overview of the kinds of membership roles in the (m)otherboard org
 
 ## 3\. Roles
 
-There are five membership roles associated with the (m)otherboard organization:
+There are five roles associated with the (m)otherboard organization:
 
 1. [Godmothers](/governance/role-godmother), individuals who serve an executive function;
 2. [Project Leads](/governance/role-project-lead), individuals who manage specific initiatives;

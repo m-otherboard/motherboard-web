@@ -30,7 +30,7 @@ html {
 
 body {
   color: var(--color-black);
-  font: 300 .75rem/1rem "Monograf", monospace;
+  font: 300 1rem/1rem "Monograf", monospace;
   font-synthesis: none;
   min-height: 100%;
   -moz-text-size-adjust: 100%;
