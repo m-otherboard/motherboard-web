@@ -13,3 +13,11 @@
   src: local("Monograf Bold"),
        url(/fonts/Monograf-Bold.otf) format("opentype");
 }
+
+@font-face {
+  font-family: "RockSalt";
+  font-style: normal;
+  font-weight: normal;
+  src: local("RockSalt Regular"),
+       url(/fonts/RockSalt-Regular.ttf) format("truetype");
+}

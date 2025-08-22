@@ -3,11 +3,13 @@ title = "Contact (m)otherboard"
 summary = "Get in touch with the (m)otherboard godmothers."
 +++
 
+<div class="clipart-frame-4" style="float: right; width: 25%;margin: 1rem;"><img src="/images/clipart/telephone.jpg" alt="Photograph of an old-fashioned 'candlestick' style telephone." /></div>
+
 <p>
   Use this form to get in touch with us. You can also email us at <a href="mailto:hello@m.otherboard.org">hello@m.otherboard.org</a>.
 </p>
 
-<form name="notify" method="post" action="/contact/thanks" data-modal-id="modal-notify" data-netlify="true" netlify-honeypot="bot-field">
+<form name="notify" style="width: 40%; margin-left: 0rem;" method="post" action="/contact/thanks" data-modal-id="modal-notify" data-netlify="true" netlify-honeypot="bot-field">
   <label class="hidden">
     <input name="bot-field">
     <input type="hidden" name="subject" value="(m) Contact Form">
@@ -16,7 +18,7 @@ summary = "Get in touch with the (m)otherboard godmothers."
   <label for="email">Your name:</label>
   <input name="name" type="text" required>
   <br style="clear: both;"/>
-  
+
   <label for="email">Your e-mail:</label>
   <input name="email" type="email" required>
   <br style="clear: both;"/>
@@ -27,3 +29,4 @@ summary = "Get in touch with the (m)otherboard godmothers."
 
   <input type="submit" value="Send Message" />
 </form>
+

@@ -12,6 +12,7 @@
   --color-green: hsl(153, 90%, 30%);
   --color-orange: hsl(18, 100%, 50%);
   --color-red: hsl(333, 100%, 40%);
+  --color-red-light: #FFC7E0;
   --color-blue: hsl(198, 90%, 40%);
   --color-black: #000;
   --color-white: #FFF;
@@ -29,7 +30,7 @@ html {
 
 body {
   color: var(--color-black);
-  font: 300 1.25rem/1.5rem "Monograf", monospace;
+  font: 300 1rem/1rem "Monograf", monospace;
   font-synthesis: none;
   min-height: 100%;
   -moz-text-size-adjust: 100%;
@@ -133,9 +134,10 @@ h2 {
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-family: "RockSalt";
+  font-size: 1rem;
   font-weight: 500;
-  line-height: 1.5rem;
+  line-height: 2rem;
   margin: 1rem 0 1.5rem 0;
   width: auto;
 }
@@ -145,8 +147,8 @@ h4 {
 }
 
 p {
-  font-size: 1.25rem;
-  line-height: 2rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   margin: .5rem 0rem 2rem 0rem;
   text-align: left;
 }
@@ -158,10 +160,14 @@ p {
 
 article {
   padding: 2rem;
-  border: 2px dashed var(--color-grey-light);
+  border: 1px dashed var(--color-grey-dark);
   margin: 2rem auto;
   background: var(--color-grey-lightest);
-  font-size: .5rem;
+  box-shadow: 0px 0px 5px var(--color-grey-light);
+}
+
+article p {
+  font-size: .9rem;
 }
 
 .cutout {
@@ -171,9 +177,8 @@ article {
   background: var(--color-red);
   color: var(--color-white);
 }
-
-.cutout p {
-  font-size: 1rem;
+.cutout a {
+  color: var(--color-white)
 }
 
 article img {
@@ -214,6 +219,7 @@ article img {
 
 .portfolio a, .portfolio em {
   background-color: var(--color-white) !important;
+  padding: .15rem;
 }
 
 .bios article {
@@ -270,6 +276,12 @@ article img {
 
 .pullquotes article img {
   box-shadow: none;
+}
+
+.scrawl {
+  font-family: "RockSalt";
+}
+
 }
 
 /* Inline Elements */
@@ -642,6 +654,22 @@ sup {
   /* transform: rotate(2deg); */
   margin-top: 1.5rem;
   margin-left: 0rem;
+  opacity: 1;
+}
+
+.clipart-frame-polaroid {
+  width: 20rem;
+  height: 20rem;
+  /* background-color: var(--color-red); */
+  margin: 1.75rem;
+  transform: rotate(3deg);
+  box-shadow: 0px 0px 20px var(--color-grey-light);
+}
+
+.clipart-frame-polaroid img {
+  width: 95%;
+  /* transform: rotate(2deg); */
+  margin: 0.5rem;
   opacity: 1;
 }
 
