@@ -161,6 +161,19 @@ article {
   border: 2px dashed var(--color-grey-light);
   margin: 2rem auto;
   background: var(--color-grey-lightest);
+  font-size: .5rem;
+}
+
+.cutout {
+  box-shadow: 0px 0px 5px var(--color-grey-light);
+  padding: 1.25rem;
+  border: 3px dashed var(--color-grey-dark);
+  background: var(--color-red);
+  color: var(--color-white);
+}
+
+.cutout p {
+  font-size: 1rem;
 }
 
 article img {
@@ -186,7 +199,12 @@ article img {
 .portfolio article {
   background: #000000;
   color: var(--color-white);
-  border: none;
+  border: 10px solid #eee;
+  box-shadow: 0px 0px 5px var(--color-grey-dark);
+}
+
+.portfolio article p {
+  font-size: .9rem;
 }
 
 .portfolio article:nth-child(1n) { transform:rotate(0deg); background: var(--color-red); }
@@ -608,6 +626,23 @@ sup {
 .clipart-frame-4 img {
   opacity: 1;
   height: 100%;
+}
+
+.clipart-frame-5 {
+  width: 15rem;
+  height: 18rem;
+  /* background-color: var(--color-red); */
+  margin: 1.75rem;
+  transform: rotate(3deg);
+  box-shadow: 0px 0px 20px var(--color-grey-light);
+}
+
+.clipart-frame-5 img {
+  width: 100%;
+  /* transform: rotate(2deg); */
+  margin-top: 1.5rem;
+  margin-left: 0rem;
+  opacity: 1;
 }
 
 .inline-image {
