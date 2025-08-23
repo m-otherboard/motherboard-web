@@ -622,6 +622,14 @@ sup {
   transform: rotate(3deg);
 }
 
+.mobile-show {
+  display: block;
+}
+
+.mobile-hide {
+  display: none;
+}
+
 .book-club-cover {
   transform: rotate(2deg);
   background-color: var(--color-grey-light);
@@ -814,6 +822,15 @@ sup {
  form {
    width: 60%;
  }
+
+  .mobile-show {
+    display: none;
+  }
+
+  .mobile-hide {
+    display: block;
+  }
+
 
  .book-club-cover {
     float: right;
