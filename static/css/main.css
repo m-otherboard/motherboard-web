@@ -273,15 +273,29 @@ article img {
   color: var(--color-black);
   border: none;
   /* border: 1px solid var(--color-grey-lightest); */
-  margin: 1rem auto;
+  margin: 0rem auto;
   box-shadow: none;
+  padding-top: 0;
   /* box-shadow: 0px 0px 5px var(--color-grey-light); */
 }
 
-.bordered {
-  padding-bottom: 3rem;
-  border-bottom: 3px solid var(--color-black);
+.bios article h3 {
+  text-align: center;
 }
+
+.bios article img {
+  margin: 0 auto 0 auto;
+  width: 100%;
+  border: 5px solid var(--color-white);
+  border-radius: 2px;
+}
+
+.bios article:nth-child(1n) img { transform:rotate(0deg); }
+.bios article:nth-child(2n) img { transform:rotate(1deg); }
+.bios article:nth-child(3n) img { transform:rotate(-2deg); }
+.bios article:nth-child(4n) img { transform:rotate(1deg); }
+.bios article:nth-child(5n) img { transform:rotate(-1deg); }
+.bios article:nth-child(6n) img { transform:rotate(0deg); }
 
 .pullquotes article {
   background: none;
@@ -292,44 +306,20 @@ article img {
   border: 1px solid var(--color-grey-light);
   border-bottom: 1px solid var(--color-grey-light);
   box-shadow: none;
-  /* animation-name: glide;
-  animation-duration: 5s;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
-  animation-iteration-count: 1; */
 }
 
 .pullquotes a {
   display: inline-block;
   opacity: 0.75;
 }
-.pullquotes .what-is-technology {
-  animation-duration: 3s;
-}
-
-.pullquotes .what-scares-you {
-  animation-duration: 6s;
-}
-
-.pullquotes .what-excites-you {
-  animation-duration: 4s;
-}
-
-.pullquotes .collective-good {
-  animation-duration: 7s;
-}
-
-@keyframes glide {
-  0% {
-    background-position: 80% 50%;
-  }
-  100% {
-   background-position: 0% 10%;
-  }
-}
 
 .pullquotes article img {
   box-shadow: none;
+}
+
+.bordered {
+  padding-bottom: 3rem;
+  border-bottom: 3px solid var(--color-black);
 }
 
 .scrawl {
