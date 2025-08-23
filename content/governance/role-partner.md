@@ -41,3 +41,5 @@ The following privileges are extended to Partners who meet the responsibilities 
 
 * Partners serve for the duration of their sponsorship or collaboration.
 * Decisions about nominations or requests to join as a Partner are made by the Godmothers.
+
+[Back](/governance/roles)

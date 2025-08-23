@@ -23,3 +23,5 @@ There are five roles associated with the (m)otherboard organization:
 Specific rights, responsibilities, and privileges are associated with these different roles. Privileges are extended to participants who fulfill their responsibilities and respect the rights of their fellow community members.
 
 All rights, responsibilities, and privileges are cumulative, starting with the fundamental provisions described in the section above.
+
+[Back](/governance)
