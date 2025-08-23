@@ -618,7 +618,7 @@ sup {
   margin: 2.25rem auto;
   border-radius: 55rem;
   border: 3px solid var(--color-grey-light);
-  /* box-shadow: 0px 0px 10px var(--color-orange); */
+  box-shadow: 0px 0px 10px var(--color-grey-dark);
 }
 
 .clipart-frame-3 img {
@@ -650,9 +650,9 @@ sup {
 }
 
 .clipart-frame-5 img {
-  width: 100%;
+  width: 90%;
   /* transform: rotate(2deg); */
-  margin-top: 1.5rem;
+  margin-top: .5rem;
   margin-left: 0rem;
   opacity: 1;
 }
