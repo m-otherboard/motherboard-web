@@ -48,7 +48,7 @@ section {
   box-sizing: border-box;
   margin: 0 auto;
   width: 75%;
-  padding: 2rem;
+  padding: 0rem 1rem;
 }
 
 ul,
@@ -123,10 +123,11 @@ h1 {
 }
 
 h2 {
+  font-family: "RockSalt";
   font-size: 1.75rem;
   font-weight: 500;
   line-height: 2rem;
-  margin: 1.5rem 0;
+  margin: 3rem 0 1.5rem 0;
 }
 
 * + h2 {
@@ -165,7 +166,6 @@ p {
 
 article {
   padding: 2rem;
-  border: 1px dashed var(--color-grey-dark);
   margin: 2rem auto;
   background: var(--color-grey-lightest);
   box-shadow: 0px 0px 5px var(--color-grey-light);
@@ -182,8 +182,9 @@ article p {
   background: var(--color-red);
   color: var(--color-white);
 }
+
 .cutout a {
-  color: var(--color-white)
+  color: var(--color-white);
 }
 
 article img {
@@ -191,6 +192,12 @@ article img {
   margin: 1rem auto;
   box-shadow: 0px 0px 5px var(--color-grey-light);
 }
+
+.homepage article:nth-child(1n) { transform:rotate(0deg); }
+.homepage article:nth-child(2n) { transform:rotate(1deg); }
+.homepage article:nth-child(3n) { transform:rotate(-2deg); }
+.homepage article:nth-child(4n) { transform:rotate(1deg); }
+.homepage article:nth-child(5n) { transform:rotate(0deg); }
 
 .articles.extras article {
   text-align: center;
@@ -202,30 +209,58 @@ article img {
   text-align: center;
 }
 
+.extras article a {
+  border-left: 3px dashed var(--color-grey-lightest);
+  border-right: 2px dashed var(--color-grey-lightest);
+}
+
 .extras article img {
   border: 1px dashed var(--color-grey-dark);
 }
 
-.portfolio article {
+.newspaper-column {
+  background: var(--color-grey-lightest);
+  color: var(--color-black);
+  box-shadow: 0px -3px 5px var(--color-grey-lightest);
+}
+
+.newspaper-column h3 {
+  display: block;
+  background: var(--color-black);
+  color: var(--color-white);
+  padding: 1rem;
+  /* box-shadow: 0px 0px 5px var(--color-grey-light); */
+  text-align: center;
+}
+
+.newspaper-column p {
+  font-size: .9rem;
+  padding: 1rem;
+  background: var(--color-white);
+}
+
+.sticker {
   background: #000000;
   color: var(--color-white);
   border: 10px solid #eee;
   box-shadow: 0px 0px 5px var(--color-grey-dark);
 }
 
-.portfolio article p {
+.sticker p {
   font-size: .9rem;
 }
 
-.portfolio article:nth-child(1n) { transform:rotate(0deg); background: var(--color-red); }
-.portfolio article:nth-child(2n) { transform:rotate(1deg); background: var(--color-black); }
-.portfolio article:nth-child(3n) { transform:rotate(-2deg); background: var(--color-green); }
-.portfolio article:nth-child(4n) { transform:rotate(1deg); background: var(--color-blue); }
-
-.portfolio a, .portfolio em {
+.sticker a, .sticker em {
+  display: inline-block;
   background-color: var(--color-white) !important;
-  padding: .15rem;
+  padding: .25rem;
+  /* box-shadow: 0px 0px 5px var(--color-grey-dark); */
 }
+
+.homepage article:nth-child(1n) { transform:rotate(0deg); background: var(--color-red); }
+.homepage article:nth-child(2n) { transform:rotate(1deg); background: var(--color-black); }
+.homepage article:nth-child(3n) { transform:rotate(-2deg); background: var(--color-green); }
+.homepage article:nth-child(4n) { transform:rotate(1deg); background: var(--color-blue); }
 
 .bios article {
   background: var(--color-white);
@@ -285,18 +320,19 @@ article img {
 
 .scrawl {
   font-family: "RockSalt";
-}
-
+  line-height: 2.25rem;
 }
 
 /* Inline Elements */
 a {
   color: var(--color-black);
   background-color: var(--color-yellow);
-  /* font-weight: 500; */
   text-decoration: underline;
   transition: color 125ms, background-color 125ms;
   text-align: left;
+  padding: 0rem 0.25rem;
+  border-left: 3px dashed var(--color-white);
+  border-right: 2px dashed var(--color-white);
 }
 
 a:focus,
@@ -365,6 +401,11 @@ header figure {
   margin-bottom: 0rem;
 }
 
+header figure a {
+  background: none;
+  border: none;
+}
+
 header figcaption {
   font-size: 3.625rem;
   font-weight: 300;
@@ -400,6 +441,7 @@ nav a {
   font-weight: 300;
   text-transform: uppercase;
   background: var(--color-black);
+  border: none;
   padding: 0.25rem .5rem;
 }
 
@@ -514,6 +556,8 @@ em {
   background-color: var(--color-yellow);
   color: var(--color-black);
   padding: .25rem;
+  border-left: 3px dashed var(--color-white);
+  border-right: 2px dashed var(--color-white);
 }
 
 button {
@@ -572,7 +616,6 @@ sup {
 }
 
 .column {
-  width: 40%;
   margin: 0rem 3rem 0 0;
 }
 
@@ -700,7 +743,7 @@ sup {
   }
 
   nav {
-    margin-top: 1rem;
+    margin-top: 0rem;
     font-size: .875rem;
   }
 
@@ -754,7 +797,7 @@ sup {
   }
 
   .column {
-    width: 40%;
+    width: 38%;
   }
 
   .articles article {

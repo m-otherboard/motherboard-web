@@ -9,54 +9,56 @@ summary = ""
   Technological dominance represents an existential threat to our democracy, planet and future generations. Our interventions include collecting narratives that share tech’s true impacts, archiving forgotten histories, and communicating a positive future in service to all life. We also provide infrastructure and a <a href="/governance">participatory governance model</a> to help our members meet their present needs and opportunities.
 </p>
 
-<div class="articles portfolio">
+<div class="articles">
 
-  <article>
+  <article class="newspaper-column">
     <h3>A People's History of Tech</h3>
     <p>
       A People's History of Tech (APHOT) reframes dominant technological narratives by documenting how diverse communities have experienced, shaped, and resisted technological change.
     </p>
     <p>
-      <a href="https://mobile.peoplestech.com">Visit the People's History of Tech website</a>.
+      <a href="https://mobile.peoplestech.com">Visit the People's History of Tech website.</a>
     </p>
   </article>
 
-  <article>
+  <article class="newspaper-column">
     <h3>Community Producer Curriculum & Cohort</h3>
     <p>
       Introducing a new top-line role in the creative team, with the expertise for building and sustaining safe fandoms and communities.
     </p>
     <p>
-      <a href="/what-we-do/community-producer/">Learn more about the Community Producer project</a>.
+      <a href="/what-we-do/community-producer/">Learn more about the Community Producer project.</a>
     </p>
   </article>
 
-  <article>
+  <article class="newspaper-column">
     <h3>Guaranteed Basic Income Program</h3>
     <p>
       The (m)otherboard Guaranteed Basic Income (GBI) program supports visionary leaders who are bending the arc of technology toward collective good with direct, no-strings-attached monthly stipends.
     </p>
     <p>
-      <a href="/what-we-do/gbi/">Meet our GBI recipients</a>.
+      <a href="/what-we-do/gbi/">Meet our GBI recipients.</a>
     </p>
   </article>
 
-  <article>
+  <article class="newspaper-column">
     <h3>Members-Only Book Club</h3>
     <p>
-      Where <a href="members">our members come together</a> for conversation and collaboration to help bend the arc of technology toward collective good. Learn more about our <a href="/book-club">book club</a>.
+      Where our members come together for conversation and collaboration to help bend the arc of technology toward collective good.
+    </p>
+    <p>
+      <a href="/book-club">Read up on our book club.</a>
     </p>
   </article>
 
-  <article>
+  <article class="newspaper-column">
     <h3>Responsive Tech Present</h3>
     <p>
       We're building responsive, participatory and nimble systems to counter present day tech disruption. This includes tech-enabled participatory governance, rapid response funds, and a growing community of practice to sustain tech justice workers and nurture radical dreaming.
-
     </p>
   </article>
 
-  <article>
+  <article class="newspaper-column">
     <h3>Intergenerational Tech Futures</h3>
     <p>
       Collaborating on the future of tech we wish to see across generations. This includes intergenerational gatherings and <a href="/what-we-do/all-kids-considered/">media projects that lift up kids' perspectives</a> on the present and future of tech.
@@ -67,31 +69,20 @@ summary = ""
 
 <script language="javascript">
 
-  const cards = document.querySelectorAll('.notecard');
-  let current = 0;
+  window.onload = function() {
+    randomizeBackgrounds();
+  };
 
-  function showCard(index) {
-    cards.forEach((card, i) => {
-      card.classList.toggle('hidden', i != index);
+  function randomizeBackgrounds() {
+    const headers = document.querySelectorAll('h3');
+    headers.forEach((header, i) => {
+      var hue = Math.floor(Math.random() * 360);
+      var pastel = `hsl(${hue}, 70%, 65%)`;
+      header.style.background = pastel;
+
+      const angle = Math.floor(Math.random() * 2)
+      header.style.transform = `rotate(${angle}deg)`;
     });
-    rotate('hands');
   }
-
-  function rotate(elemId) {
-    const elem = document.getElementById(elemId);
-    if (!elem) return;
-    const angle = Math.floor(Math.random() * 90)
-    elem.style.transform = `rotate(${angle}deg)`;
-  }
-
-  document.getElementById('prev').addEventListener('click', () => {
-    current = (current - 1 + cards.length) % cards.length;
-    showCard(current);
-  });
-
-  document.getElementById('next').addEventListener('click', () => {
-    current = (current + 1) % cards.length;
-    showCard(current);
-  });
 
 </script>
