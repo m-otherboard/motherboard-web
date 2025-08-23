@@ -624,7 +624,7 @@ sup {
 
 .book-club-cover {
   transform: rotate(2deg);
-  background-color: var(--color-green);
+  background-color: var(--color-grey-light);
   padding: .25rem;
 }
 
