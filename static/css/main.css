@@ -247,11 +247,6 @@ article img {
   box-shadow: -3px 0px 5px var(--color-grey-lightest);
 }
 
-
-
-
-
-
 .newspaper-column h3 {
   display: block;
   background: var(--color-black);
@@ -271,6 +266,9 @@ article img {
   /* background: var(--color-white); */
 }
 
+.newspaper-column a {
+  padding: 0;
+}
 .sticker {
   background: #000000;
   color: var(--color-white);
@@ -716,7 +714,7 @@ sup {
   width: 19rem;
   height: 21rem;
   /* background-color: var(--color-red); */
-  margin: 1.75rem;
+  margin: 1.75rem auto;
   transform: rotate(3deg);
   box-shadow: 0px 0px 20px var(--color-grey-light);
 }
