@@ -436,7 +436,8 @@ nav ul {
   display: inline-flex;
   flex-wrap: wrap;
   list-style-type: none;
-  margin: 0 auto;
+  justify-content: center;
+  margin: 1rem auto 0rem auto;
 }
 
 nav li {
@@ -811,6 +812,11 @@ sup {
   .articles article {
     width: 35%;
   }
+
+  nav ul {
+    margin: 0rem auto;
+  }
+
 
 }
 
