@@ -713,7 +713,7 @@ sup {
 .clipart-frame-5 {
   width: 19rem;
   height: 21rem;
-  /* background-color: var(--color-red); */
+  background-color: var(--color-white);
   margin: 1.75rem auto;
   transform: rotate(3deg);
   box-shadow: 0px 0px 20px var(--color-grey-light);
@@ -818,6 +818,10 @@ sup {
     float: right;
     width: 35%;
     margin: 0 0 3rem 3rem;
+  }
+
+  .clipart-frame-5 {
+    margin: 1.75rem 0 1.75rem 1.75rem;
   }
 
   .column {
