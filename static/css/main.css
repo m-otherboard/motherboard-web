@@ -209,16 +209,20 @@ article img {
   width: 25%;
 }
 
-.extras article p {
+.merch article h3 {
   text-align: center;
 }
 
-.extras article a {
+.merch article p {
+  text-align: center;
+}
+
+.merch article a {
   border-left: 3px dashed var(--color-grey-lightest);
   border-right: 2px dashed var(--color-grey-lightest);
 }
 
-.extras article img {
+.merch article img {
   border: 1px dashed var(--color-grey-dark);
 }
 
