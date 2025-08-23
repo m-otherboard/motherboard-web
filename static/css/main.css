@@ -333,8 +333,8 @@ article img {
   background-size: contain;
   background-position: center;
   color: var(--color-black);
-  border-bottom: 1px solid var(--color-grey-light);
   box-shadow: none;
+  margin: 0rem auto;
 }
 
 .pullquotes a {
