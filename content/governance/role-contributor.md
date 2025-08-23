@@ -48,3 +48,4 @@ The following privileges are extended to Contributors who meet the responsibilit
 * Contributors serve for the duration of their active participation in the project team.
 * Decisions on nominations or requests to become a Contributor follow procedures established by the project team.
 
+[Back](/governance/roles)

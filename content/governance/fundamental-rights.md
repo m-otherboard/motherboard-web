@@ -7,7 +7,7 @@ summary = "The fundamental rights, responsibilities, and privileges of members o
 
 [Back](/governance)
 
-## 2\. Fundamental Rights, Responsibilities, and Privileges
+## 2\. Rights, Responsibilities, and Privileges
 
 Every participant in the (m)otherboard community has the same set of recognized fundamental rights. They also have a set of responsibilities to the community that must always be met, and a set of privileges that are extended as a result of meeting their responsibilities and respecting the fundamental rights of others in the community.
 
@@ -34,3 +34,4 @@ The following privileges are enjoyed by all individuals in the (m)otherboard eco
 
 1. The privilege of **access to opportunities** to collaborate and learn with a community working for better outcomes and greater equity in tech.
 
+[Back](/governance)

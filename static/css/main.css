@@ -286,15 +286,22 @@ article img {
   background: none;
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
   color: var(--color-black);
-  border: none;
-  animation-name: glide;
+  border: 1px solid var(--color-grey-light);
+  border-bottom: 1px solid var(--color-grey-light);
+  box-shadow: none;
+  /* animation-name: glide;
   animation-duration: 5s;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
-  animation-iteration-count: 1;
+  animation-iteration-count: 1; */
 }
 
+.pullquotes a {
+  display: inline-block;
+  opacity: 0.75;
+}
 .pullquotes .what-is-technology {
   animation-duration: 3s;
 }
@@ -595,14 +602,6 @@ textarea {
 sup {
   display: inline-block;
   transform: rotate(3deg);
-}
-
-.one-tab-two-spaces {
-  padding-left: 2rem;
-}
-
-.two-tabs-four-spaces {
-  padding-left: 4rem;
 }
 
 .book-club-cover {
