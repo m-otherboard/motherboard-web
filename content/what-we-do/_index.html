@@ -67,6 +67,14 @@ summary = "Learn about (m)otherboard's innovative strategic interventions."
 
 </div>
 
+<div class="article cutout">
+  <h3>Your support makes all this possible.</h3>
+  <p>
+    If you'd like to help sustain our work, consider <a href="/donate">making a one-time or recurring donation</a>. For philanthropic giving, please <a href="/contact">get in touch</a>.
+  </p>
+</div>
+
+
 <script language="javascript">
 
   window.onload = function() {
@@ -74,10 +82,10 @@ summary = "Learn about (m)otherboard's innovative strategic interventions."
   };
 
   function randomizeBackgrounds() {
-    const headers = document.querySelectorAll('h3');
+    const headers = document.querySelectorAll('.newspaper-column h3');
     headers.forEach((header, i) => {
       var hue = Math.floor(Math.random() * 360);
-      var pastel = `hsl(${hue}, 70%, 65%)`;
+      var pastel = `hsl(${hue}, 70%, 55%)`;
       header.style.background = pastel;
 
       const angle = Math.floor(Math.random() * 2)
