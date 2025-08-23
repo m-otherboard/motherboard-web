@@ -185,6 +185,8 @@ article p {
 
 .cutout a {
   color: var(--color-white);
+  background: none;
+  border: none;
 }
 
 article img {
