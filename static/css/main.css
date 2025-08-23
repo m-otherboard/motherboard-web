@@ -666,17 +666,18 @@ sup {
 }
 
 .clipart-frame-3 {
-  width: 50%;
+  width: 20.25rem;
   /* background-color: var(--color-white); */
   margin: 2.25rem auto;
   border-radius: 55rem;
-  border: 3px solid var(--color-grey-light);
+  /* border: 3px solid var(--color-grey-light); */
   box-shadow: 0px 0px 10px var(--color-grey-dark);
 }
 
 .clipart-frame-3 img {
   height: 20rem;
   border-radius: 55rem;
+  opacity: 0.65;
 }
 
 .clipart-frame-4 {
@@ -694,7 +695,7 @@ sup {
 
 .clipart-frame-5 {
   width: 19rem;
-  height: 21rem;
+  height: 19rem;
   /* background-color: var(--color-red); */
   margin: 1.75rem;
   transform: rotate(3deg);
@@ -702,8 +703,8 @@ sup {
 }
 
 .clipart-frame-5 img {
-  width: 90%;
-  /* transform: rotate(2deg); */
+  width: 100%;
+  transform: rotate(2deg);
   margin-top: .5rem;
   margin-left: 0rem;
   opacity: 1;
