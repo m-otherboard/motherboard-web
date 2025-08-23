@@ -126,8 +126,9 @@ h2 {
   font-family: "RockSalt";
   font-size: 1.75rem;
   font-weight: 500;
-  line-height: 2rem;
+  line-height: 2.5rem;
   margin: 3rem 0 1.5rem 0;
+  color: var(--color-red);
 }
 
 * + h2 {
@@ -187,6 +188,7 @@ article p {
   color: var(--color-white);
   background: none;
   border: none;
+  padding: 0;
 }
 
 article img {
@@ -244,8 +246,9 @@ article img {
 .sticker {
   background: #000000;
   color: var(--color-white);
-  border: 10px solid #eee;
-  box-shadow: 0px 0px 5px var(--color-grey-dark);
+  border: 10px solid #eeeeee;
+  border-radius: 3px;
+  box-shadow: 0px 0px 3px var(--color-grey-dark);
 }
 
 .sticker p {
@@ -259,10 +262,11 @@ article img {
   /* box-shadow: 0px 0px 5px var(--color-grey-dark); */
 }
 
-.homepage article:nth-child(1n) { transform:rotate(0deg); background: var(--color-red); }
-.homepage article:nth-child(2n) { transform:rotate(1deg); background: var(--color-black); }
-.homepage article:nth-child(3n) { transform:rotate(-2deg); background: var(--color-green); }
+.homepage article:nth-child(1n) { transform:rotate(0deg); background: var(--color-black); }
+.homepage article:nth-child(2n) { transform:rotate(1deg); background: var(--color-green); }
+.homepage article:nth-child(3n) { transform:rotate(-2deg); background: var(--color-red); }
 .homepage article:nth-child(4n) { transform:rotate(1deg); background: var(--color-blue); }
+.homepage article:nth-child(5n) { transform:rotate(0deg); background: var(--color-grey-dark); }
 
 .bios article {
   background: var(--color-white);
@@ -282,15 +286,22 @@ article img {
   background: none;
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
   color: var(--color-black);
-  border: none;
-  animation-name: glide;
+  border: 1px solid var(--color-grey-light);
+  border-bottom: 1px solid var(--color-grey-light);
+  box-shadow: none;
+  /* animation-name: glide;
   animation-duration: 5s;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
-  animation-iteration-count: 1;
+  animation-iteration-count: 1; */
 }
 
+.pullquotes a {
+  display: inline-block;
+  opacity: 0.75;
+}
 .pullquotes .what-is-technology {
   animation-duration: 3s;
 }
@@ -323,6 +334,7 @@ article img {
 .scrawl {
   font-family: "RockSalt";
   line-height: 2.25rem;
+  color: var(--color-red);
 }
 
 /* Inline Elements */
@@ -592,14 +604,6 @@ sup {
   transform: rotate(3deg);
 }
 
-.one-tab-two-spaces {
-  padding-left: 2rem;
-}
-
-.two-tabs-four-spaces {
-  padding-left: 4rem;
-}
-
 .book-club-cover {
   transform: rotate(2deg);
   background-color: var(--color-green);
@@ -662,18 +666,16 @@ sup {
 }
 
 .clipart-frame-3 {
-  width: 21rem;
-  height: 21rem;
-  background-color: var(--color-white);
+  width: 50%;
+  /* background-color: var(--color-white); */
   margin: 2.25rem auto;
-  border-radius: 55rem;
-  border: 3px solid var(--color-grey-light);
+  border-radius: 30rem;
+  /* border: 3px solid var(--color-grey-light); */
   /* box-shadow: 0px 0px 10px var(--color-orange); */
 }
 
 .clipart-frame-3 img {
-  opacity: 1;
-  height: 21rem;
+  height: 20rem;
   border-radius: 55rem;
 }
 
@@ -710,10 +712,11 @@ sup {
 .clipart-frame-polaroid {
   width: 20rem;
   height: 20rem;
-  /* background-color: var(--color-red); */
-  margin: 1.75rem;
+  background-color: var(--color-white);
+  margin: 1.75rem auto;
   transform: rotate(3deg);
   box-shadow: 0px 0px 20px var(--color-grey-light);
+  border-radius: 2px;
 }
 
 .clipart-frame-polaroid img {
@@ -721,6 +724,7 @@ sup {
   /* transform: rotate(2deg); */
   margin: 0.5rem;
   opacity: 1;
+  border-radius: 3px;
 }
 
 .inline-image {
