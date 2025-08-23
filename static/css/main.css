@@ -269,12 +269,13 @@ article img {
 .homepage article:nth-child(5n) { transform:rotate(0deg); background: var(--color-grey-dark); }
 
 .bios article {
-  background: var(--color-white);
+  background: none;
   color: var(--color-black);
   border: none;
-  /* border: 1px dashed var(--color-blue); */
+  /* border: 1px solid var(--color-grey-lightest); */
   margin: 1rem auto;
-  box-shadow: 0px 0px 5px var(--color-grey-light);
+  box-shadow: none;
+  /* box-shadow: 0px 0px 5px var(--color-grey-light); */
 }
 
 .bordered {
