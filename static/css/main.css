@@ -126,6 +126,7 @@ h1 {
   font-weight: 500;
   line-height: 3rem;
   margin: 3rem 0 0 0;
+  padding-bottom: .75rem;
   text-align: center;
   border-bottom: 3px solid var(--color-black);
 }
