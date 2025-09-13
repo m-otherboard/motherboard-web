@@ -200,11 +200,6 @@ article p {
   padding: 0;
 }
 
-.whitespace {
-  margin: 1rem inherit;
-  line-height: 1.25rem;
-}
-
 article img {
   width: 90%;
   margin: 1rem auto;
