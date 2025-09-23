@@ -239,19 +239,21 @@ article img {
 .trading-card {
   background: var(--color-white);
   color: var(--color-black);
-  box-shadow: 1px -3px 5px var(--color-grey-medium);
+  box-shadow: 1px -3px 5px var(--color-grey-light);
+  border-radius: 1rem;
+  /* margin: 0 -.1rem 0 0; */
 }
 
 .trading-card h3 {
   display: block;
-  background: var(--color-black);
+  background: var(--color-grey-dark);
   color: var(--color-white);
   padding: 1rem;
-  height: 4rem;
-  margin: -2.5rem -2.75rem 0 -2.5rem;
+  height: 6rem;
+  margin: 0 0 2rem 0;
   border: 5px solid var(--color-white);
   border-radius: 1rem;
-  box-shadow: 3px 3px 3px var(--color-grey-medium);
+  box-shadow: 1px 1px 2px var(--color-grey-light);
   text-align: center;
 }
 
@@ -263,12 +265,10 @@ article img {
 
 .trading-card p {
   font-size: .9rem;
-  /* background: var(--color-white); */
-}
-
-.trading-card p {
-  font-size: .9rem;
-  /* background: var(--color-white); */
+  background: var(--color-white);
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 3px var(--color-grey-light);
 }
 
 .trading-card a {
