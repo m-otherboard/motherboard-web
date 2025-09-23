@@ -17,6 +17,7 @@
   --color-black: #000;
   --color-white: #FFF;
   --color-grey-dark: #444;
+  --color-grey-medium: #aaa;
   --color-grey-light: #ccc;
   --color-grey-lightest: #eee;
   --color-todo: #FFFFBF;
@@ -235,51 +236,42 @@ article img {
   border: 1px dashed var(--color-grey-dark);
 }
 
-.newspaper-column {
+.trading-card {
   background: var(--color-white);
   color: var(--color-black);
-  box-shadow: 3px -3px 5px var(--color-grey-lightest);
+  box-shadow: 1px -3px 5px var(--color-grey-light);
+  border-radius: 1rem;
+  /* margin: 0 -.1rem 0 0; */
 }
 
-.newspaper-columns article:nth-child(1n) {
-  box-shadow: 3px -3px 5px var(--color-grey-lightest);
-}
-.newspaper-columns article:nth-child(2n) {
-  box-shadow: -3px 3px 5px var(--color-grey-lightest);
-}
-.newspaper-columns article.n:nth-child(3n) {
-  box-shadow: 0px -3px 5px var(--color-grey-lightest);
-}
-.newspaper-columns article.n:nth-child(4n) {
-  box-shadow: 0px 3px 5px var(--color-grey-lightest);
-}
-.newspaper-columns article.n:nth-child(5n) {
-  box-shadow: 3px 0px 5px var(--color-grey-lightest);
-}
-.newspaper-columns article.n:nth-child(6n) {
-  box-shadow: -3px 0px 5px var(--color-grey-lightest);
-}
-
-.newspaper-column h3 {
+.trading-card h3 {
   display: block;
-  background: var(--color-black);
+  background: var(--color-grey-dark);
   color: var(--color-white);
   padding: 1rem;
-  /* box-shadow: 0px 0px 5px var(--color-grey-light); */
+  height: 6rem;
+  margin: 0 0 2rem 0;
+  border: 5px solid var(--color-white);
+  border-radius: 1rem;
+  box-shadow: 1px 1px 2px var(--color-grey-light);
   text-align: center;
 }
 
-.newspaper-column p {
+.trading-card:nth-child(1n) { transform:rotate(1deg); }
+.trading-card:nth-child(2n) { transform:rotate(-2deg); }
+.trading-card:nth-child(3n) { transform:rotate(0deg); }
+.trading-card:nth-child(4n) { transform:rotate(-1deg); }
+.trading-card:nth-child(5n) { transform:rotate(-2deg); }
+
+.trading-card p {
   font-size: .9rem;
-  /* background: var(--color-white); */
+  background: var(--color-white);
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 3px var(--color-grey-light);
 }
 
-.newspaper-column p {
-  font-size: .9rem;
-  /* background: var(--color-white); */
-}
-
-.newspaper-column a {
+.trading-card a {
   padding: 0;
 }
 
