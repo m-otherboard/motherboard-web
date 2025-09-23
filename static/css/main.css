@@ -17,6 +17,7 @@
   --color-black: #000;
   --color-white: #FFF;
   --color-grey-dark: #444;
+  --color-grey-medium: #aaa;
   --color-grey-light: #ccc;
   --color-grey-lightest: #eee;
   --color-todo: #FFFFBF;
@@ -238,26 +239,7 @@ article img {
 .newspaper-column {
   background: var(--color-white);
   color: var(--color-black);
-  box-shadow: 3px -3px 5px var(--color-grey-lightest);
-}
-
-.newspaper-columns article:nth-child(1n) {
-  box-shadow: 3px -3px 5px var(--color-grey-lightest);
-}
-.newspaper-columns article:nth-child(2n) {
-  box-shadow: -3px 3px 5px var(--color-grey-lightest);
-}
-.newspaper-columns article.n:nth-child(3n) {
-  box-shadow: 0px -3px 5px var(--color-grey-lightest);
-}
-.newspaper-columns article.n:nth-child(4n) {
-  box-shadow: 0px 3px 5px var(--color-grey-lightest);
-}
-.newspaper-columns article.n:nth-child(5n) {
-  box-shadow: 3px 0px 5px var(--color-grey-lightest);
-}
-.newspaper-columns article.n:nth-child(6n) {
-  box-shadow: -3px 0px 5px var(--color-grey-lightest);
+  box-shadow: 0px 0px 5px var(--color-grey-medium);
 }
 
 .newspaper-column h3 {
@@ -265,7 +247,8 @@ article img {
   background: var(--color-black);
   color: var(--color-white);
   padding: 1rem;
-  /* box-shadow: 0px 0px 5px var(--color-grey-light); */
+  margin: -2rem -2.25rem 0 -2.25rem;
+  box-shadow: 0px 0px 5px var(--color-grey-light); */
   text-align: center;
 }
 
