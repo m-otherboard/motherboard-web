@@ -305,6 +305,7 @@ article img {
 }
 
 .manifesto h3 {
+  font-family: "Monograf";
   text-align: center;
   text-decoration: underline;
   font-size: 1.5rem;
@@ -312,10 +313,12 @@ article img {
 }
 
 .manifesto p {
+  font-family: "RockSalt";
   width: 80%;
   margin: 1.25rem auto;
   text-align: center;
   font-size: 1.25rem;
+  line-height: 2.25rem;
 }
 
 .manifesto .separator {
