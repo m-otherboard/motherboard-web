@@ -300,6 +300,24 @@ article img {
 .homepage article:nth-child(4n) { transform:rotate(1deg); background: var(--color-blue); }
 .homepage article:nth-child(5n) { transform:rotate(0deg); background: var(--color-grey-dark); }
 
+.manifesto h3 {
+  font-family: "RockSalt";
+  font-size: 1.5rem;
+  margin: 3rem 0;
+  line-height: 3rem;
+}
+
+.manifesto p {
+  width: 80%;
+  margin: 1.25rem 0 0 0;
+}
+
+.manifesto .separator {
+  font-family: "RockSalt";
+  color: var(--color-grey-light);
+  text-align: right;
+}
+
 .bios article {
   background: none;
   color: var(--color-black);
