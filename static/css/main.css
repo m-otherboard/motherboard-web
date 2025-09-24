@@ -307,17 +307,15 @@ article img {
 .manifesto h3 {
   font-family: "RockSalt";
   text-align: center;
-  text-decoration: underline;
   font-size: 1.5rem;
   margin: 3rem 0;
+  line-height: 3rem;
 }
 
 .manifesto p {
   width: 80%;
   margin: 1.25rem auto;
   text-align: center;
-  font-size: 1.25rem;
-  line-height: 2.5rem;
 }
 
 .manifesto .separator {
