@@ -238,8 +238,8 @@ article img {
 
 .trading-card {
   background: var(--color-white);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(241, 241, 241, 1) 35%, rgba(255, 255, 255, 1) 100%);
   color: var(--color-black);
-  box-shadow: 1px -3px 5px var(--color-grey-light);
   border-radius: 1rem;
 }
 
