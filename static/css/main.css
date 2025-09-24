@@ -300,13 +300,8 @@ article img {
 .homepage article:nth-child(4n) { transform:rotate(1deg); background: var(--color-blue); }
 .homepage article:nth-child(5n) { transform:rotate(0deg); background: var(--color-grey-dark); }
 
-.manifesto h2 {
-  text-align: center;
-}
-
 .manifesto h3 {
   font-family: "RockSalt";
-  text-align: center;
   font-size: 1.5rem;
   margin: 3rem 0;
   line-height: 3rem;
@@ -314,14 +309,13 @@ article img {
 
 .manifesto p {
   width: 80%;
-  margin: 1.25rem auto;
-  text-align: center;
+  margin: 1.25rem 0 0 0;
 }
 
 .manifesto .separator {
   font-family: "RockSalt";
-  text-align: center;
-  color: var(--color-grey-medium);
+  color: var(--color-grey-light);
+  text-align: right;
 }
 
 .bios article {
