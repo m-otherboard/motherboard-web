@@ -38,7 +38,7 @@ body {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  background-image: url("/images/photocopy-background.png");
+  background-image: url("/images/photocopy-background.webp");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: contain;
