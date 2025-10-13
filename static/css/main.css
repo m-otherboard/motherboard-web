@@ -498,7 +498,7 @@ nav a {
   text-transform: uppercase;
   background: var(--color-black);
   border: none;
-  padding: 0.25rem .5rem;
+  padding: 0.5rem;
 }
 
 nav a:focus,
