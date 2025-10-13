@@ -81,7 +81,6 @@ footer {
 
 footer p {
   text-align: center;
-  font-size: .875rem;
   margin-bottom: 0rem;
 }
 
@@ -282,7 +281,7 @@ article img {
 }
 
 .sticker p {
-  font-size: .9rem;
+  font-size: 1rem;
 }
 
 .sticker a, .sticker em {
