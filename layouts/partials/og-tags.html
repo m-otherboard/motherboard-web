@@ -9,7 +9,9 @@
 
 {{ if .Params.Summary }}
 	<meta property="og:description" content="{{ .Params.Summary }}">
+	<meta name="description" content="{{ .Params.Summary }}">
 {{ else }}
 	<meta property="og:description" content="{{ $.Site.Params.Summary }}">
+	<meta name="description" content="{{ .Site.Params.Summary }}">
 {{ end }}
 
