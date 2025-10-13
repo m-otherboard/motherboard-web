@@ -9,7 +9,7 @@
 :root {
   --color-primary: #fff;
   --color-yellow: color(display-p3 0.98 0.895 0.467);
-  --color-green: hsl(153, 90%, 30%);
+  --color-green: hsl(153, 90%, 20%);
   --color-orange: hsl(18, 100%, 50%);
   --color-red: hsl(333, 100%, 40%);
   --color-red-light: #FFC7E0;
@@ -81,7 +81,6 @@ footer {
 
 footer p {
   text-align: center;
-  font-size: .875rem;
   margin-bottom: 0rem;
 }
 
@@ -282,7 +281,7 @@ article img {
 }
 
 .sticker p {
-  font-size: .9rem;
+  font-size: 1rem;
 }
 
 .sticker a, .sticker em {
