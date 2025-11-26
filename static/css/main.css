@@ -521,6 +521,7 @@ nav li:nth-child(6n) { transform:rotate(0deg); }
 form {
   margin: 0 1rem;
   border: 5px dotted var(--color-red);
+  padding: 1rem;
 }
 
 form p {
