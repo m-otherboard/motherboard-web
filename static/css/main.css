@@ -235,6 +235,11 @@ article img {
   border: 1px dashed var(--color-grey-dark);
 }
 
+.notecard {
+  background-color: var(--color-grey-lightest);
+  padding: 1rem;
+}
+
 .trading-card {
   background: var(--color-white);
   background: linear-gradient(180deg, var(--color-white) 0%, var(--color-grey-lightest) 35%, var(--color-white) 100%);
