@@ -238,6 +238,7 @@ article img {
 .notecard {
   background-color: var(--color-grey-lightest);
   padding: 1rem;
+  margin-bottom: 2rem;
 }
 
 .trading-card {
